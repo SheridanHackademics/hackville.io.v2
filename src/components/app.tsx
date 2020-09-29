@@ -1,12 +1,12 @@
 import React from "react"
-import About from "./about"
-import Faq from "./faq"
-import Footer from "./footer"
-import GetInvolved from "./get-involved"
-import Header from "./header"
-import Landing from "./landing"
-import PreviousYear from "./previous-year"
-import Sponsors from "./sponsors"
+import About from "./about/about"
+import Faq from "./faq/faq"
+import Footer from "./footer/footer"
+import GetInvolved from "./get-involved/get-involved"
+import Header from "./header/header"
+import Landing from "./landing/landing"
+import PreviousYear from "./previous-years/previous-year"
+import Sponsors from "./sponsors/sponsors"
 
  const App = () => 
     (
