@@ -1,0 +1,44 @@
+.landing{
+    text-align: center;
+    display: flexbox;
+}
+
+.landingP, .date{
+    height: 36px;
+    letter-spacing: 2.4px;
+    font: normal normal 300 24px/55px NeueHaasUnicaW1G-MediumIt;
+    opacity: 1;
+    padding: 0;
+    margin: 0;    
+    vertical-align: middle;
+    top: 50%;
+}
+
+.hackademicsShape{
+    height: 82px;
+    margin-top: 72px;
+    margin-bottom: 48px;
+}
+
+.logo{
+    height: 170px;
+    margin: 0;
+}
+
+.date{
+    margin-top: 40px;
+    margin-bottom: 4px;
+}
+
+.applicationBtn{
+    height: 37px;
+    width: 429px;
+    margin-top: 24px;
+}
+
+/* .applyBtn{
+    width: 136px;
+    height: 135px;
+    color: #ffdb00;
+    margin-left: 20%;
+} */

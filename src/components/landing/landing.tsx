@@ -1,9 +1,14 @@
 import React from "react"
-import styled from "styled-components"
+import landingStyles from "./landing.module.css"
 
 const Landing = () => (
-    <section id="#" style={{margin: `768px 0px`}}>
-      <h1> this is landing! </h1>
+    <section className={landingStyles.landing} id="#">
+      <div className={landingStyles.hackademicsShape}> Hackademics presents</div>
+      <h1 className={landingStyles.logo}>Hackville logo</h1>
+      <p className={landingStyles.date}>february 5 - 7, 2021</p>
+      <p className={landingStyles.landingP}>virtual</p>
+      <button className={landingStyles.applicationBtn}>Applications are open</button>
+      <a className={landingStyles.applyBtn}>Apply Now</a>
     </section>
 )
 

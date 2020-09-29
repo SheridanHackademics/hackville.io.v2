@@ -7,7 +7,7 @@ const Header = () => (
       <nav className={headerStyles.navbar}>
         <div className={headerStyles.hamburger}><div></div></div> 
         <div>
-          <Link to='#'>Hackademics Logo</Link>
+          <Link to='#'>Hackville Logo</Link>
         </div>
         <ul className={headerStyles.navbarUl}>
           <li><Link to='#about'>About</Link></li>
