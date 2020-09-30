@@ -1,0 +1,21 @@
+.aboutSection{
+    width: 100%;
+    display: inline-flex;
+}
+
+.aboutFlower{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutFlower > img{
+    /* width: 22%; */
+    height: 22%;
+}
+
+.aboutFlower > p{
+    position: absolute;
+}
