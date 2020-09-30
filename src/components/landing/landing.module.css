@@ -1,6 +1,9 @@
 .landing{
     text-align: center;
-    display: flexbox;
+}
+
+.landing > div {
+    justify-content: center;
 }
 
 .landingP, .date{
@@ -9,8 +12,7 @@
     font: normal normal 300 24px/55px NeueHaasUnicaW1G-MediumIt;
     opacity: 1;
     padding: 0;
-    margin: 0;    
-    vertical-align: middle;
+    margin: 0;
     top: 50%;
 }
 
@@ -20,9 +22,10 @@
     margin-bottom: 48px;
 }
 
-.logo{
-    height: 170px;
+.logo>img{
+    height: 10%;
     margin: 0;
+    width: 63.124%;
 }
 
 .date{
@@ -30,15 +33,28 @@
     margin-bottom: 4px;
 }
 
+.btn{
+    display: flex;
+}
+
 .applicationBtn{
     height: 37px;
     width: 429px;
     margin-top: 24px;
+    justify-self: flex-end;
 }
 
-/* .applyBtn{
-    width: 136px;
+.applyBtn{
+    position: absolute;
+    /* width: 136px; */
     height: 135px;
     color: #ffdb00;
-    margin-left: 20%;
-} */
+    margin-left: 80%;
+}
+
+@media (max-width: 768px){
+
+    .applyBtn{
+        position: fixed;
+    }
+}

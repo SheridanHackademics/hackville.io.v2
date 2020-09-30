@@ -1,13 +1,14 @@
 import { Link } from "gatsby"
 import React from "react"
 import headerStyles from "./header.module.css"
+import logo from "../../images/hackville-white.svg"
 
 const Header = () => (
   <header> 
       <nav className={headerStyles.navbar}>
         <div className={headerStyles.hamburger}><div></div></div> 
         <div>
-          <Link to='#'>Hackville Logo</Link>
+          <Link to='#'><img src={logo}></img></Link>
         </div>
         <ul className={headerStyles.navbarUl}>
           <li><Link to='#about'>About</Link></li>
