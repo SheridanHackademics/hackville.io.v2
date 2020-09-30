@@ -1,0 +1,13 @@
+name: hackville.io.v2 build
+on:
+  pull_request:
+    branches: [master]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build hackville.io.v2
+        run: |
+          yarn
+          npm run build
