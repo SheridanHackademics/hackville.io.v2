@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import headerStyles from "./header.module.css"
-import logo from "../../images/hackville-white.svg"
+import logo from "../../images/logos/hackville-white.svg"
 
 const Header = () => (
   <header> 

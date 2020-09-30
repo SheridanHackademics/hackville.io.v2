@@ -1,6 +1,6 @@
 import React from "react"
 import landingStyles from "./landing.module.css"
-import logo from "../../images/hackville-black.svg"
+import logo from "../../images/logos/hackville-black.svg"
 
 const Landing = () => (
     <section className={landingStyles.landing} id="#">
