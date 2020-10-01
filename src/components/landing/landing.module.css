@@ -45,6 +45,7 @@
 }
 
 .applyBtn{
+    /* Add image svg for this btn and adjust z-index */
     position: absolute;
     /* width: 136px; */
     height: 135px;

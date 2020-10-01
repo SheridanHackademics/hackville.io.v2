@@ -1,0 +1,48 @@
+footer{
+    height: 29.374vh;
+    width: 100%;
+    background-color: #000;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer > ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer > img{
+    height: 7.834vh;
+}
+
+.socials{
+    width: 14vh;
+    display: inline-flex;
+    justify-content: space-between;
+}
+/* Need to center the H */
+.socials > a > img{
+    height: 5.222vh;
+}
+
+@media (max-width: 768px){
+
+    footer{
+        height: 14.972vh;
+        font-size: 9px;
+    }
+
+    footer > img{
+        height: 3.917vh;
+    }
+    
+    .socials{
+        width: 7vh;
+    }
+
+    .socials > a > img{
+        height: 2.46vh;
+    }
+}
