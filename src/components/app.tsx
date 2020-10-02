@@ -8,17 +8,17 @@ import Landing from "./landing/landing"
 import PreviousYear from "./previous-years/previous-year"
 import Sponsors from "./sponsors/sponsors"
 
- const App = () => 
+const App = () =>
     (
         <>
-        <Header />
-            <Landing />
+            <Header />
+            {/* <Landing />
             <About />
             <PreviousYear />
             <Faq />
             <GetInvolved />
             <Sponsors />
-        <Footer />
+        <Footer /> */}
         </>
     )
 
