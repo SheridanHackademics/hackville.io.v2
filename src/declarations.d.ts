@@ -4,6 +4,6 @@ declare module "*.svg" {
 }
 
 declare module "*.css" {
-    const content: any;
+    const content: { [className: string]: string };
     export default content;
 }

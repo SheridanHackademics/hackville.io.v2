@@ -1,0 +1,11 @@
+.apply {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 70px;
+    height: 70px;
+
+    &__img {
+        width: 70px;
+    }
+}

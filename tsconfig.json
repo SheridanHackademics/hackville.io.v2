@@ -1,6 +1,6 @@
 {
     "include": [
-        "./src/**/*",
+        "./src/**/*"
     ],
     "compilerOptions": {
         "target": "esnext",
@@ -17,9 +17,6 @@
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "noEmit": true,
-        "skipLibCheck": true,
-        "include": [
-            "./src/declarations.d.ts"
-        ]
+        "skipLibCheck": true
     }
 }

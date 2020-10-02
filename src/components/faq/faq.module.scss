@@ -1,0 +1,21 @@
+.section {
+    justify-content: center;
+    text-align: center;
+}
+
+.header {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &__img {
+        height: 50px;
+        width: 250px;
+    }
+
+    &__main-text {
+        position: absolute;
+        color: #fff;
+    }
+}

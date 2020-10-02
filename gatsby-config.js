@@ -1,3 +1,5 @@
+require("ts-node").register({ files: true });
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -12,6 +14,10 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-codegen`,
+      options: {}
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -28,6 +34,7 @@ module.exports = {
       }
     },
     `gatsby-plugin-typescript`,
+    `gatsby-plugin-scss-typescript`,
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {

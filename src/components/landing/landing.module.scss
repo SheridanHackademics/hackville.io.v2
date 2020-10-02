@@ -1,0 +1,126 @@
+.presents {
+    margin: auto;
+    color: #fff;
+    display: flex;
+    width: 70%;
+
+    &__container {
+        display: flex;
+        width: calc(100% - 90px);
+        background-color: #2952e6;
+        align-items: center;
+        justify-content: space-evenly;
+
+        &__img {
+            height: 33%;
+        }
+    }
+
+
+}
+
+.triangle {
+
+    &__right {
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-right: 45px solid #2952e6;
+    }
+
+    &__left {
+        width: 0;
+        height: 0;
+
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 45px solid #2952e6;
+    }
+}
+
+.main__logo {
+    width: 80%;
+    margin: 0px 10%;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+
+    p {
+        margin: 0;
+    }
+}
+
+.apply__Btn {
+    border: none;
+    background-color: transparent;
+    padding-top: 1rem;
+    border-bottom: #FFDB00 solid 100%;
+}
+
+
+// .landing {
+//     text-align: center;
+// }
+
+// .landing > div {
+//     justify-content: center;
+// }
+
+// .landingP, .date{
+//     height: 36px;
+//     letter-spacing: 2.4px;
+//     font: normal normal 300 24px/55px NeueHaasUnicaW1G-MediumIt;
+//     opacity: 1;
+//     padding: 0;
+//     margin: 0;
+//     top: 50%;
+// }
+
+// .hackademicsShape{
+//     height: 82px;
+//     margin-top: 72px;
+//     margin-bottom: 48px;
+// }
+
+// .logo>img{
+//     height: 22%;
+//     margin: 0;
+//     width: 70.352%;
+// }
+
+// .date{
+//     margin-top: 40px;
+//     margin-bottom: 4px;
+// }
+
+// .btn{
+//     display: flex;
+// }
+
+// .applicationBtn{
+//     height: 37px;
+//     width: 429px;
+//     margin-top: 24px;
+//     justify-self: flex-end;
+// }
+
+// .applyBtn{
+//     /* Add image svg for this btn and adjust z-index */
+//     position: absolute;
+//     /* width: 136px; */
+//     height: 125px;
+//     color: #ffdb00;
+//     margin-left: 80%;
+// }
+
+// @media (max-width: 768px){
+// /* resize applicationBtn in mobile version */
+//     .applyBtn{
+//         position: fixed;
+//     }
+// }
