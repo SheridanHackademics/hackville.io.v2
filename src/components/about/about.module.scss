@@ -1,0 +1,80 @@
+.section {
+    justify-content: center;
+    text-align: center;
+}
+
+.header {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &__img {
+        height: 190px;
+        width: 250px;
+    }
+
+    &__main-text {
+        position: absolute;
+        color: #fff;
+        font-family: 'neue-haas-unica-regular-italic', sans-serif;
+        letter-spacing: 1px;
+        font-size: 1.2em;
+    }
+}
+
+.description {
+    width: 100%;
+    padding: 1rem 4rem;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'neue-haas-unica-light', sans-serif;
+}
+
+// .aboutSection{
+//     width: 100%;
+//     display: inline-flex;
+//     align-items: center;
+//     margin-top: 14.044%;
+//     margin-bottom: 12.885%;
+//     justify-content: space-evenly;
+//     flex-wrap: wrap;
+// }
+
+// .aboutFlower{
+//     height: 100%;
+//     display: inline-flex;
+//     align-items: center;
+//     justify-content: center;
+
+// }
+
+// .aboutFlower > img{
+//     height: 22%;
+// }
+
+// .aboutFlower > p{
+//     position: absolute;
+// }
+
+// .aboutSection > p{
+//     width: 40.484%;
+// }
+
+// @media (max-width: 768px){
+
+//     .aboutSection{
+//         margin-bottom: 71px;
+//     }
+
+//     .aboutSection > p{
+//         width: 63.2%;
+//         margin: 24px 0 0 0;
+//     }
+
+//     .aboutFlower > img{
+//         height: 187px;
+//     }
+// }

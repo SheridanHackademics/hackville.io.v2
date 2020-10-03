@@ -68,14 +68,13 @@ const GetInvolved = () => {
   return <section id="get-involved" className={styles.section}>
     <div className={styles.header}>
       <img className={styles.headerImg} src={Header}></img>
-      <p className={styles.headerMainText}>Frequently asked questions</p>
+      <p className={styles.headerMainText}>get involved</p>
     </div>
     <div className={styles.content}>
       <p>
         Without volunteers, mentors, and sponsors, Hackville would never be
         possible. We are looking for people to volunteer or mentor at Hackville
-        2021, as well as sponsors for our event —
-        <Link to="#">click below.</Link>
+        2021, as well as sponsors for our event — click below.
       </p>
     </div>
     <div className={styles.content}>
@@ -86,4 +85,4 @@ const GetInvolved = () => {
   </section>
 }
 
-export default GetInvolved
+export default GetInvolved;

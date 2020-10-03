@@ -31,23 +31,25 @@ const App = () => {
   return (
     <React.Fragment>
       <Header />
-      <Landing />
-      <About />
-      <PreviousYear />
-      <Faq />
-      <GetInvolved />
-      <Sponsors />
-      <Link to="#" className={styles.apply}>
-        <Img className={styles.applyImg}
-          fluid={data.file.childImageSharp.fluid}
-          objectFit="cover"
-          objectPosition="50% 50%"
-          alt="Apply Button"
-        />
-      </Link>
+      <main style={{ position: 'relative' }}>
+        <Landing />
+        <About />
+        <PreviousYear />
+        <Faq />
+        <GetInvolved />
+        <Sponsors />
+        <Link to="#" className={styles.apply}>
+          <Img className={styles.applyImg}
+            fluid={data.file.childImageSharp.fluid}
+            objectFit="cover"
+            objectPosition="50% 50%"
+            alt="Apply Button"
+          />
+        </Link>
+      </main>
       <Footer />
     </React.Fragment>
   )
 }
 
-export default App
+export default App;

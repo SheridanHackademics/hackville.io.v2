@@ -1,10 +1,25 @@
-import React from "react"
+import React, { useState } from "react"
 import * as styles from "./faq.module.scss";
 import Header from "../../images/headers/faq-header.svg"
 
 interface IFaq {
   title: string,
   description: string,
+}
+
+const Description = ({ title, description }: IFaq) => {
+  let [state, setState] = useState(false);
+
+  let active = (state) ? styles.active : styles.hidden;
+
+  return <li onClick={() => setState(!state)} className={styles.listItem}>
+    <h3 className={styles.listItemTitle}>
+      {title}
+    </h3>
+    <p className={styles.listItemDescription + " " + active}>
+      {description}
+    </p>
+  </li>
 }
 
 const Faq = () => {
@@ -51,13 +66,13 @@ const Faq = () => {
   return <section id="faq" className={styles.section}>
     <div className={styles.header}>
       <img className={styles.headerImg} src={Header}></img>
-      <p className={styles.headerMainText}>Frequently asked questions</p>
+      <p className={styles.headerMainText}>frequently asked questions</p>
     </div>
-    <div>
-      <ul>
-        {faqs.map((item, i) => {
-          <li>{item.title}</li>
-        })}
+    <div className={styles.content}>
+      <ul className={styles.list}>
+        {faqs.map((item, i) =>
+          <Description key={i} title={item.title} description={item.description} />
+        )}
       </ul>
     </div>
   </section>

@@ -17,14 +17,20 @@
     &__main-text {
         position: absolute;
         color: #fff;
+        font-family: 'neue-haas-unica-regular-italic', sans-serif;
+        letter-spacing: 1px;
+        font-size: .9em;
     }
 }
 
 .content {
     width: 100%;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem 2rem;
     box-sizing: border-box;
+    font-size: 1em;
+    line-height: 24px;
+    font-family: 'neue-haas-unica-light', sans-serif;
 }
 
 .involvement {
@@ -44,6 +50,9 @@
 
     &__title {
         text-align: center;
-
+        font-family: 'neue-haas-unica-light', sans-serif;
+        font-size: 2em;
+        font-weight: 300;
+        margin: 1rem;
     }
 }

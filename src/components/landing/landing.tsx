@@ -4,7 +4,7 @@ import * as BlackLogo from "../../images/logos/hackville-black.svg";
 import * as WhiteHackademics from "../../images/logos/ha-wordmark-bw-white-SVG.svg";
 
 const Landing = () => (
-  <section id="#">
+  <section id="#" className={styles.section}>
     <div className={styles.presents}>
       <div className={styles.triangleRight} />
       <div className={styles.presentsContainer}>

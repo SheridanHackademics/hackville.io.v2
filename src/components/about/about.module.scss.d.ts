@@ -3,6 +3,4 @@ export const header: string;
 export const header__img: string;
 export const headerImg: string;
 export const headerMainText: string;
-export const content: string;
-export const images: string;
-export const photo: string;
+export const description: string;

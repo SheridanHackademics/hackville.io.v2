@@ -17,6 +17,9 @@
     &__main-text {
         position: absolute;
         color: #fff;
+        font-family: 'neue-haas-unica-regular-italic', sans-serif;
+        letter-spacing: 1px;
+        font-size: .9em;
     }
 }
 
@@ -25,4 +28,20 @@
     text-align: center;
     padding: 1rem 2rem;
     box-sizing: border-box;
+    font-size: 1em;
+    line-height: 24px;
+    font-family: 'neue-haas-unica-light', sans-serif;
+
+}
+
+.images {
+    width: 100%;
+    padding: 0rem 2rem 2rem 2rem;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.photo {
+    margin: 3rem 0rem;
 }

@@ -1,3 +1,4 @@
+export const section: string;
 export const presents: string;
 export const presents__container: string;
 export const presentsContainer: string;
