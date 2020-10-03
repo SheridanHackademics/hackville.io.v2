@@ -1,41 +1,111 @@
-import React from "react"
-import previousStyles from "./previous-year.module.css"
-import recap from "../../images/headers/recap-header.svg"
-import recapHackers from "../../images/hackers-star.svg"
-import recapHours from "../../images/hours-triangle.svg"
-import recapProjects from "../../images/projects-triangle.svg"
-import recapPrizes from "../../images/prizes-blob.svg"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
+import * as styles from "./previous-year.module.scss";
+import recap from "../../images/headers/recap-header.svg";
+import recapHackers from "../../images/hackers-star.svg";
+import recapHours from "../../images/hours-triangle.svg";
+import recapProjects from "../../images/projects-triangle.svg";
+import recapPrizes from "../../images/prizes-blob.svg";
+
+const query = graphql`
+  query {
+    photo1: file(relativePath: { eq: "photos/photo1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          tracedSVG
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+          sizes
+        }
+      }
+    },
+    photo2: file(relativePath: { eq: "photos/photo2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          tracedSVG
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+          sizes
+        }
+      }
+    },
+    photo3: file(relativePath: { eq: "photos/photo3.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          tracedSVG
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+          sizes
+        }
+      }
+    },
+  }
+`
+
+interface IStat {
+  image: any,
+  text: string,
+  subText: string,
+}
+
+const Stat = ({ image, text, subText }: IStat) => (
+  <div className={styles.stat}>
+    <img className={styles.statImage} src={image}></img>
+    <p className={styles.statSubText} >{subText}</p>
+    <p className={styles.statText} >{text}</p>
+  </div>
+);
 
 //Probably rename to recap and code for recapData can probably be refactored
-const PreviousYear = () => (
-    <section id="previous-year" className={previousStyles.recapSection}>
-      <div className={previousStyles.recapHeader}>
-        <img src={recap}></img>
-        <p>hackville 2019 recap</p>
-      </div>
-      <div className={previousStyles.recapData}>
-        <div className={previousStyles.data}>
-          <img src={recapHackers}></img>
-          <p>100</p>
-          <p>Hackers</p>
-        </div>
-        <div className={previousStyles.data}>
-          <img src={recapHours}></img>
-          <p>42</p>
-          <p>Hours</p>
-        </div>
-        <div className={previousStyles.data}>
-          <img src={recapProjects}></img>
-          <p>23</p>
-          <p>Projects</p>
-        </div>
-        <div className={previousStyles.data}>
-          <img src={recapPrizes}></img>
-          <p>$4k</p>
-          <p>Prizes</p>
-        </div>
-      </div>
-    </section>
-)
+const PreviousYear = () => {
+  const imageData = useStaticQuery(query);
+  const data: IStat[] = [
+    {
+      image: recapHackers,
+      subText: "100",
+      text: "hackers"
+    },
+    {
+      image: recapHours,
+      subText: "42",
+      text: "hours"
+    },
+    {
+      image: recapProjects,
+      subText: "23",
+      text: "projects"
+    },
+    {
+      image: recapPrizes,
+      subText: "$4k",
+      text: "prizes"
+    }
+  ];
+
+  return <section id="previous-year" className={styles.section}>
+    <div className={styles.header}>
+      <img className={styles.headerImg} src={recap}></img>
+      <p className={styles.headerMainText}>Hackville 2019 recap</p>
+    </div>
+    <div className={styles.list}>
+      {data.map(d => <Stat key={d.text} image={d.image} text={d.text} subText={d.subText} />)}
+    </div>
+    <div className={styles.images}>
+      <Img className={styles.photo} fluid={imageData.photo1.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 1" />
+      <Img className={styles.photo} fluid={imageData.photo2.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 2" />
+      <Img className={styles.photo} fluid={imageData.photo3.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 3" />
+    </div>
+  </section>
+}
 
 export default PreviousYear

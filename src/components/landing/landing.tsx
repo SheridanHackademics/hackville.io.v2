@@ -1,20 +1,25 @@
 import React from "react"
-import landingStyles from "./landing.module.css"
-import logo from "../../images/logos/hackville-black.svg"
+import styles from "./landing.module.scss"
+import * as BlackLogo from "../../images/logos/hackville-black.svg";
+import * as WhiteHackademics from "../../images/logos/ha-wordmark-bw-white-SVG.svg";
 
 const Landing = () => (
-    <section className={landingStyles.landing} id="#">
-      <div className={landingStyles.hackademicsShape}> Hackademics presents</div>
-      <h1 className={landingStyles.logo}><img src={logo}></img></h1>
-      <div>
-        <div className={landingStyles.date}>february 5 - 7, 2021</div>
-        <p className={landingStyles.landingP}>virtual</p>
+  <section id="#" className={styles.section}>
+    <div className={styles.presents}>
+      <div className={styles.triangleRight} />
+      <div className={styles.presentsContainer}>
+        <img className={styles.presentsContainerImg} src={WhiteHackademics} />
+        <p>presents</p>
       </div>
-      <div className={landingStyles.btn}>
-        <button className={landingStyles.applicationBtn}>Applications are open</button>
-        <a className={landingStyles.applyBtn}>Apply Now</a>
-      </div>
-    </section>
+      <div className={styles.triangleLeft} />
+    </div>
+    <img className={styles.mainLogo} src={BlackLogo} />
+    <div className={styles.information}>
+      <p>february 5 - 7, 2021</p>
+      <p>virtual</p>
+      <button className={styles.applyBtn}>Applications are opening soon</button>
+    </div>
+  </section >
 )
 
 export default Landing

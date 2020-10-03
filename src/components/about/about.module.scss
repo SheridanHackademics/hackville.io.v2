@@ -1,0 +1,46 @@
+.section {
+    justify-content: center;
+    text-align: center;
+}
+
+.header {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &__img {
+        height: 190px;
+        width: 250px;
+    }
+
+    &__main-text {
+        position: absolute;
+        color: #fff;
+        font-family: 'neue-haas-unica-regular-italic', sans-serif;
+        letter-spacing: 1px;
+        font-size: 1.2em;
+    }
+}
+
+.description {
+    width: 100%;
+    padding: 1rem 4rem;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'neue-haas-unica-light', sans-serif;
+}
+
+@media only screen and (min-width : 768px) {
+    .section {
+        display: flex;
+        width: 960px;
+        margin: auto;
+    }
+
+    .description {
+        margin-top: 8px;
+    }
+}

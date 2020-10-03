@@ -1,24 +1,45 @@
+import React, { useState } from "react"
 import { Link } from "gatsby"
-import React from "react"
-import headerStyles from "./header.module.css"
-import logo from "../../images/logos/hackville-white.svg"
+import * as Logo from "../../images/logos/hackville-white.svg";
+import * as styles from "./header.module.scss";
 
-const Header = () => (
-  <header> 
-      <nav className={headerStyles.navbar}>
-        <div className={headerStyles.hamburger}><div></div></div> 
-        <div>
-          <Link to='#'><img src={logo}></img></Link>
+const Header: React.FC = () => {
+  const [state, setState] = useState(false);
+
+  let navListVisibility = (state) ? styles.navListShow : styles.navListHidden;
+  let navList = styles.navList + " " + navListVisibility;
+
+  return (
+    <header className={styles.header}>
+      <nav className={styles.nav}>
+        <div className={styles.navMobile}>
+          <div onClick={() => setState(!state)} className={styles.navBurger}>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <Link to='#' className={styles.navLogo}><img className={styles.navLogo} src={Logo} /></Link>
         </div>
-        <ul className={headerStyles.navbarUl}>
-          <li><Link to='#about'>About</Link></li>
-          <li><Link to='#previous-year'>2019</Link></li>
-          <li><Link to='#faq'>FAQ</Link></li>
-          <li><Link to='#get-involved'>Get Involved</Link></li>
-          <li><Link to='#sponsors'>Sponsors</Link></li>
+        <ul className={navList} >
+          <li className={styles.navListLink}>
+            <Link onClick={() => setState(!state)} to='#about'>About</Link>
+          </li>
+          <li className={styles.navListLink}>
+            <Link onClick={() => setState(!state)} to='#previous-year'>Hackville 2019</Link>
+          </li>
+          <li className={styles.navListLink}>
+            <Link onClick={() => setState(!state)} to='#faq'>FAQ</Link>
+          </li>
+          <li className={styles.navListLink}>
+            <Link onClick={() => setState(!state)} to='#get-involved'>Get Involved</Link>
+          </li>
+          <li className={styles.navListLink}>
+            <Link onClick={() => setState(!state)} to='#sponsors'>Sponsors</Link>
+          </li>
         </ul>
       </nav>
-  </header>
-)
+    </header>
+  )
+}
 
-export default Header
+export default Header 
