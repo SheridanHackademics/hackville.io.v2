@@ -33,48 +33,14 @@
     font-family: 'neue-haas-unica-light', sans-serif;
 }
 
-// .aboutSection{
-//     width: 100%;
-//     display: inline-flex;
-//     align-items: center;
-//     margin-top: 14.044%;
-//     margin-bottom: 12.885%;
-//     justify-content: space-evenly;
-//     flex-wrap: wrap;
-// }
+@media only screen and (min-width : 768px) {
+    .section {
+        display: flex;
+        width: 960px;
+        margin: auto;
+    }
 
-// .aboutFlower{
-//     height: 100%;
-//     display: inline-flex;
-//     align-items: center;
-//     justify-content: center;
-
-// }
-
-// .aboutFlower > img{
-//     height: 22%;
-// }
-
-// .aboutFlower > p{
-//     position: absolute;
-// }
-
-// .aboutSection > p{
-//     width: 40.484%;
-// }
-
-// @media (max-width: 768px){
-
-//     .aboutSection{
-//         margin-bottom: 71px;
-//     }
-
-//     .aboutSection > p{
-//         width: 63.2%;
-//         margin: 24px 0 0 0;
-//     }
-
-//     .aboutFlower > img{
-//         height: 187px;
-//     }
-// }
+    .description {
+        margin-top: 8px;
+    }
+}

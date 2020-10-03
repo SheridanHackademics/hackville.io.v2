@@ -6,3 +6,4 @@ export const headerMainText: string;
 export const content: string;
 export const images: string;
 export const photo: string;
+export const photoContainer: string;

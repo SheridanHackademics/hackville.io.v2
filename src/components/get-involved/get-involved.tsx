@@ -1,7 +1,6 @@
 import React from "react";
 import * as styles from "./get-involved.module.scss";
 import Header from "../../images/headers/getinvolved-header.svg";
-import { Link } from "@reach/router";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 

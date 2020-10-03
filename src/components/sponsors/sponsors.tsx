@@ -166,17 +166,39 @@ const Sponsors = () => {
       </p>
     </div>
     <div className={styles.images}>
-      <Img className={styles.photo} fluid={imageData.photo1.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 1" />
-      <Img className={styles.photo} fluid={imageData.photo2.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 2" />
-      <Img className={styles.photo} fluid={imageData.photo3.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 3" />
-      <Img className={styles.photo} fluid={imageData.photo4.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 3" />
-      <Img className={styles.photo} fluid={imageData.photo5.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 3" />
-      <Img className={styles.photo} fluid={imageData.photo6.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 3" />
-      <Img className={styles.photo} fluid={imageData.photo7.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 3" />
-      <Img className={styles.photo} fluid={imageData.photo8.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 3" />
-      <Img className={styles.photo} fluid={imageData.photo9.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 3" />
-      <Img className={styles.photo} fluid={imageData.photo10.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 3" />
-      <Img className={styles.photo} fluid={imageData.photo11.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 3" />
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.photo1.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 1" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.photo2.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.photo3.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 3" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.photo4.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 3" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.photo5.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 3" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.photo6.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 3" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.photo7.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 3" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.photo8.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 3" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.photo9.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 3" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.photo10.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 3" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.photo11.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 3" />
+      </div>
     </div>
   </section>
 }

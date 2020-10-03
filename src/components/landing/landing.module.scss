@@ -24,11 +24,7 @@
     }
 }
 
-// font-family: 'neue-haas-unica-light', sans-serif;
-
-
 .triangle {
-
     &__right {
         width: 0;
         height: 0;
@@ -93,65 +89,22 @@
     }
 }
 
+@media only screen and (min-width : 768px) {
+    .presents {
+        width: 400px;
 
-// .landing {
-//     text-align: center;
-// }
+        &__container {
+            &__img {
+                height: 44%;
+            }
+        }
+    }
 
-// .landing > div {
-//     justify-content: center;
-// }
+    .information p {
+        font-size: 2em;
+    }
 
-// .landingP, .date{
-//     height: 36px;
-//     letter-spacing: 2.4px;
-//     font: normal normal 300 24px/55px NeueHaasUnicaW1G-MediumIt;
-//     opacity: 1;
-//     padding: 0;
-//     margin: 0;
-//     top: 50%;
-// }
-
-// .hackademicsShape{
-//     height: 82px;
-//     margin-top: 72px;
-//     margin-bottom: 48px;
-// }
-
-// .logo>img{
-//     height: 22%;
-//     margin: 0;
-//     width: 70.352%;
-// }
-
-// .date{
-//     margin-top: 40px;
-//     margin-bottom: 4px;
-// }
-
-// .btn{
-//     display: flex;
-// }
-
-// .applicationBtn{
-//     height: 37px;
-//     width: 429px;
-//     margin-top: 24px;
-//     justify-self: flex-end;
-// }
-
-// .applyBtn{
-//     /* Add image svg for this btn and adjust z-index */
-//     position: absolute;
-//     /* width: 136px; */
-//     height: 125px;
-//     color: #ffdb00;
-//     margin-left: 80%;
-// }
-
-// @media (max-width: 768px){
-// /* resize applicationBtn in mobile version */
-//     .applyBtn{
-//         position: fixed;
-//     }
-// }
+    .apply__Btn {
+        font-size: 2em;
+    }
+}
