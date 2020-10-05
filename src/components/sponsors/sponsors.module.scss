@@ -8,12 +8,10 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     &__img {
         height: 50px;
         width: 250px;
     }
-
     &__main-text {
         position: absolute;
         color: #fff;
@@ -31,20 +29,16 @@
     font-size: 1em;
     line-height: 24px;
     font-family: 'neue-haas-unica-light', sans-serif;
-
 }
 
 .images {
-    width: 100%;
-    padding: 0rem 2rem 2rem 2rem;
-    flex-direction: column;
-    position: relative;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3rem;
 }
 
 .photo {
     margin: 3rem 0rem;
-
     &--container {
         width: 100%;
         height: 100%;
@@ -53,16 +47,17 @@
     }
 }
 
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width: 768px) {
+    .header {
+        margin-top: 4rem;
+    }
     .images {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 4rem;
         row-gap: 4rem;
     }
-
     .photo {
         margin: 0px;
     }
-
 }

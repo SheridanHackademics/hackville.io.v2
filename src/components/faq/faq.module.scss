@@ -8,12 +8,10 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     &__img {
         height: 50px;
         width: 250px;
     }
-
     &__main-text {
         position: absolute;
         color: #fff;
@@ -31,10 +29,8 @@
 
 .list {
     width: 100%;
-
     &__item {
         transition: height 2s ease;
-
         &__title {
             text-align: left;
             font-family: 'neue-haas-unica-bold', sans-serif;
@@ -43,7 +39,6 @@
             padding: .65rem 0rem;
             margin: 0px;
         }
-
         &__description {
             font-family: 'neue-haas-unica-light', sans-serif;
             letter-spacing: 1px;
@@ -66,9 +61,12 @@
     height: 0;
 }
 
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width: 768px) {
     .list {
         width: 678px;
         margin: auto;
+    }
+    .header {
+        margin-top: 4rem;
     }
 }
