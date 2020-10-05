@@ -11,10 +11,10 @@ import Landing from "./landing/landing"
 import PreviousYear from "./previous-years/previous-year"
 import Sponsors from "./sponsors/sponsors"
 
-import styles from "./app.module.scss";
+import styles from "./app.module.scss"
 
 const query = graphql`
- query GetApplyPicture {
+  query GetApplyPicture {
     file(relativePath: { eq: "apply-badge@2x.png" }) {
       childImageSharp {
         fluid(maxWidth: 80) {
@@ -23,33 +23,36 @@ const query = graphql`
       }
     }
   }
-`;
+`
 
 const App = () => {
-  const data = useStaticQuery(query);
+  const data = useStaticQuery(query)
 
   return (
     <React.Fragment>
-      <Header />
-      <main style={{ position: 'relative' }}>
-        <Landing />
-        <About />
-        <PreviousYear />
-        <Faq />
-        <GetInvolved />
-        <Sponsors />
-        <Link to="#" className={styles.apply}>
-          <Img className={styles.applyImg}
-            fluid={data.file.childImageSharp.fluid}
-            objectFit="cover"
-            objectPosition="50% 50%"
-            alt="Apply Button"
-          />
-        </Link>
-      </main>
-      <Footer />
+      <div>
+        <Header />
+        <main className="main">
+          <Landing />
+          <About />
+          <PreviousYear />
+          <Faq />
+          <GetInvolved />
+          <Sponsors />
+          <Link to="#" className={styles.apply}>
+            <Img
+              className={styles.applyImg}
+              fluid={data.file.childImageSharp.fluid}
+              objectFit="cover"
+              objectPosition="50% 50%"
+              alt="Apply Button"
+            />
+          </Link>
+        </main>
+        <Footer />
+      </div>
     </React.Fragment>
   )
 }
 
-export default App;
+export default App

@@ -48,6 +48,9 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .header {
+        margin-top: 4rem;
+    }
     .images {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

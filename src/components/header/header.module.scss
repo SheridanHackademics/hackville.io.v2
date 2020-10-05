@@ -4,6 +4,7 @@
     box-sizing: border-box;
     position: fixed;
     z-index: 1000;
+    background-color: black;
 }
 
 .nav {
@@ -100,7 +101,7 @@
         display: none;
     }
     .nav {
-        width: 100%;
+        width: 1080px;
         flex-direction: row;
         &__list {
             position: relative;
