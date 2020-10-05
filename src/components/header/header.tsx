@@ -11,7 +11,7 @@ const Header: React.FC = () => {
 
   return (
     <header className={styles.header}>
-      <nav className={"main " + styles.nav}>
+      <nav className={styles.nav}>
         <div className={styles.navMobile}>
           <div onClick={() => setState(!state)} className={styles.navBurger}>
             <div></div>

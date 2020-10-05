@@ -12,6 +12,7 @@ import PreviousYear from "./previous-years/previous-year"
 import Sponsors from "./sponsors/sponsors"
 
 import styles from "./app.module.scss"
+import SEO from "./seo"
 
 const query = graphql`
   query GetApplyPicture {
@@ -30,27 +31,26 @@ const App = () => {
 
   return (
     <React.Fragment>
-      <div>
-        <Header />
-        <main className="main">
-          <Landing />
-          <About />
-          <PreviousYear />
-          <Faq />
-          <GetInvolved />
-          <Sponsors />
-          <Link to="#" className={styles.apply}>
-            <Img
-              className={styles.applyImg}
-              fluid={data.file.childImageSharp.fluid}
-              objectFit="cover"
-              objectPosition="50% 50%"
-              alt="Apply Button"
-            />
-          </Link>
-        </main>
-        <Footer />
-      </div>
+      <SEO title="Hackville 2021"></SEO>
+      <Header />
+      <main className="main">
+        <Landing />
+        <About />
+        <PreviousYear />
+        <Faq />
+        <GetInvolved />
+        <Sponsors />
+      </main>
+      {/* <Link to="#" className={styles.apply}>
+        <Img
+          className={styles.applyImg}
+          fluid={data.file.childImageSharp.fluid}
+          objectFit="cover"
+          objectPosition="50% 50%"
+          alt="Apply Button"
+        />
+      </Link> */}
+      <Footer />
     </React.Fragment>
   )
 }

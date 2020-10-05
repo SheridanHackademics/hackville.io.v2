@@ -1,10 +1,12 @@
 .apply {
     position: sticky;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 1rem;
+    right: 0rem;
     float: right;
     width: 120px;
     height: 120px;
+    margin: 2rem;
+
     &__img {
         width: 120px;
     }

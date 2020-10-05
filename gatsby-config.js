@@ -2,9 +2,12 @@ require("ts-node").register({ files: true });
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Hackville 2021`,
+    description: `Come signup for Sheridans 2nd annual, first virtual Hackathon! Lots of fun to be had and lots to learn. Brought to you by Hackademics. Sheridans hackathon club.`,
+    author: `@hackademics`,
+    url: "https://hackville.io",
+    image: "/images/favicon.png",
+    twitterUsername: "@hackademicsclub"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,13 +27,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Hackville 2021`,
+        short_name: `Hackvile is Sheridan Colleges Hackathon, Created by Hackademics`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        //icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       }
     },
     `gatsby-plugin-typescript`,

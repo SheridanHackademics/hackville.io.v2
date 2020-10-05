@@ -18,7 +18,6 @@ ul {
 
 @media (min-width: 768px) {
     .main {
-        width: 768px;
         margin: auto;
     }
 }
@@ -54,6 +53,7 @@ ul {
 /*{"last_published":"2020-09-30 02:26:07 UTC"}*/
 
 @import url("https://p.typekit.net/p.css?s=1&k=ysq5fpb&ht=tk&f=39518.39519.39521.39522.39523.44084.44085&a=26401067&app=typekit&e=css");
+
 @font-face {
     font-family: "neue-haas-unica-regular-italic";
     src: url("https://use.typekit.net/af/18efc2/00000000000000003b9b205e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"), url("https://use.typekit.net/af/18efc2/00000000000000003b9b205e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"), url("https://use.typekit.net/af/18efc2/00000000000000003b9b205e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");

@@ -1,6 +1,6 @@
 /* Started to transition to VH here */
 
-footer {
+.footer {
     height: 29.374vh;
     width: 100%;
     background-color: #000;
@@ -20,7 +20,7 @@ a {
     font-size: 1.5rem;
 }
 
-footer>img {
+.footer>img {
     height: 7.834vh;
 }
 
@@ -38,19 +38,23 @@ footer>img {
 }
 
 @media (max-width: 900px) {
-    footer {
+    .footer {
         height: 14.972vh;
         font-size: 9px;
     }
-    footer>img {
+
+    .footer>img {
         height: 3.917vh;
     }
+
     .socials {
         width: 7vh;
     }
+
     .socials>a>img {
         height: 2.46vh;
     }
+
     a {
         font-size: 1rem;
     }
