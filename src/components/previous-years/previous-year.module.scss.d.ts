@@ -1,4 +1,6 @@
 export const section: string;
+export const greenRect: string;
+export const sparkle: string;
 export const header: string;
 export const list: string;
 export const header__img: string;

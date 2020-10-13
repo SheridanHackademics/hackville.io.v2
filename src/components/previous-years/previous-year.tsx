@@ -7,6 +7,8 @@ import recapHackers from "../../images/hackers-star.svg";
 import recapHours from "../../images/hours-triangle.svg";
 import recapProjects from "../../images/projects-triangle.svg";
 import recapPrizes from "../../images/prizes-blob.svg";
+import greenRect from "../../images/green-rect.svg";
+import sparkle from "../../images/sparkle.svg";
 
 const query = graphql`
   query {
@@ -93,6 +95,8 @@ const PreviousYear = () => {
   ];
 
   return <section id="previous-year" className={styles.section}>
+    <img className={styles.sparkle} src={sparkle}></img>
+    <img className={styles.greenRect} src={greenRect} />
     <div className={styles.header}>
       <img className={styles.headerImg} src={recap}></img>
       <p className={styles.headerMainText}>Hackville 2019 recap</p>

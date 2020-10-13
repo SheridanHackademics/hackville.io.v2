@@ -3,6 +3,20 @@
     text-align: center;
 }
 
+.greenRect {
+    position: absolute;
+    height: 20.5rem;
+    top: 129rem;
+    left: 50px;
+    z-index: -1;
+}
+
+.sparkle {
+    position: absolute;
+    display: none;
+    z-index: -1;
+}
+
 .header,
 .list {
     height: 100%;
@@ -68,6 +82,20 @@
 }
 
 @media only screen and (min-width: 768px) {
+
+    .greenRect {
+        height: 23rem;
+        top: 94.5rem;
+        left: 22rem;
+    }
+
+    .sparkle {
+        display: block;
+        height: 7rem;
+        top: 103rem;
+        left: 5rem;
+    }
+
     .header {
         margin-top: 4rem;
     }
@@ -95,5 +123,20 @@
         &:nth-child(3) {
             margin-top: 300px;
         }
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+
+    .greenRect {
+        height: 30.3rem;
+        top: 81rem;
+        left: 32rem;
+    }
+
+    .sparkle {
+        height: 9rem;
+        top: 100rem;
+        left: 7rem;
     }
 }
