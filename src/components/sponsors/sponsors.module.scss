@@ -50,7 +50,16 @@
 @media only screen and (min-width: 768px) {
     .header {
         margin-top: 4rem;
+        &__img{
+            height: 100%;
+            width: 26.5rem; 
+        }
+        &__main-text{
+            font-size: 1.5rem;
+            letter-spacing: 2.4px;
+        }
     }
+    
     .images {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
