@@ -3,6 +3,10 @@
     text-align: center;
 }
 
+.star{
+    display: none;
+}
+
 .header {
     height: 100%;
     display: inline-flex;
@@ -24,7 +28,7 @@
 .content {
     width: 100%;
     padding: 2rem;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 .list {
@@ -62,11 +66,33 @@
 }
 
 @media only screen and (min-width: 768px) {
+
     .list {
         width: 678px;
         margin: auto;
     }
+
     .header {
         margin-top: 4rem;
     }
+
+    .content{
+        display: flex;
+    }
+
+    .star{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        margin-left: 65%;
+        &__text{
+            position: absolute;
+            font-family: 'obviously-normal', sans-serif;;
+            font-size: .9em;
+            letter-spacing: 1.5px;
+        }
+    }
+
 }
