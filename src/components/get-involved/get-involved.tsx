@@ -56,7 +56,9 @@ interface IProps {
 
 const Involvement = ({ title, photo, extraStyles }: IProps) => (
   <div className={styles.involvement}>
-    <Img className={styles.involvementPhoto + " " + extraStyles} fluid={photo.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 1" />
+    <div className={styles.involvementPhoto + " " + extraStyles}>
+      <Img className={styles.involvementPhotoCenter} fluid={photo.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 1" />
+    </div>
     <h3 className={styles.involvementTitle}>{title}</h3>
   </div>
 )

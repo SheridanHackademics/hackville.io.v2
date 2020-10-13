@@ -3,17 +3,25 @@
     text-align: center;
 }
 
+.star {
+    display: none;
+}
+
 .header {
     height: 100%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+
     &__img {
         height: 50px;
         width: 250px;
     }
+
     &__main-text {
         position: absolute;
+        top: -5%;
         color: #fff;
         font-family: 'neue-haas-unica-regular-italic', sans-serif;
         letter-spacing: 1px;
@@ -24,13 +32,15 @@
 .content {
     width: 100%;
     padding: 2rem;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 .list {
     width: 100%;
+
     &__item {
         transition: height 2s ease;
+
         &__title {
             text-align: left;
             font-family: 'neue-haas-unica-bold', sans-serif;
@@ -39,6 +49,7 @@
             padding: .65rem 0rem;
             margin: 0px;
         }
+
         &__description {
             font-family: 'neue-haas-unica-light', sans-serif;
             letter-spacing: 1px;
@@ -62,11 +73,45 @@
 }
 
 @media only screen and (min-width: 768px) {
+
     .list {
         width: 678px;
         margin: auto;
     }
+
     .header {
         margin-top: 4rem;
+
+        &__img {
+            height: 100%;
+            width: 26.5rem;
+        }
+
+        &__main-text {
+            font-size: 1.5rem;
+            letter-spacing: 2.4px;
+        }
     }
+
+    .content {
+        display: flex;
+    }
+
+    .star {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        margin-left: 65%;
+
+        &__text {
+            position: absolute;
+            font-family: 'obviously-normal', sans-serif;
+            top: 42%;
+            font-size: .9em;
+            letter-spacing: 1.5px;
+        }
+    }
+
 }

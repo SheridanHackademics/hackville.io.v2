@@ -8,12 +8,16 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+
     &__img {
         height: 190px;
         width: 250px;
     }
+
     &__main-text {
         position: absolute;
+        top: 35%;
         color: #fff;
         font-family: 'neue-haas-unica-regular-italic', sans-serif;
         letter-spacing: 1px;
@@ -35,9 +39,22 @@
     .section {
         display: flex;
         width: 960px;
+        padding-bottom: 7rem;
         margin: auto;
     }
+
+    .header {
+        &__img {
+            height: 314px;
+        }
+
+        &__main-text {
+            top: 40%;
+        }
+    }
+
     .description {
-        margin-top: 8px;
+        width: 569px;
+        font-size: 1em;
     }
 }

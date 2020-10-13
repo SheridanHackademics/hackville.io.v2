@@ -1,4 +1,5 @@
 .section {
+    margin-top: 4rem;
     justify-content: center;
     text-align: center;
 }
@@ -9,16 +10,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     &__img {
         height: 50px;
         width: 250px;
     }
+
     &__main-text {
         position: absolute;
         color: #fff;
         font-family: 'neue-haas-unica-regular-italic', sans-serif;
         letter-spacing: 1px;
         font-size: .9em;
+    }
+}
+
+.header {
+    position: relative;
+
+    &__main-text {
+        position: absolute;
+        top: 0%;
     }
 }
 
@@ -43,9 +55,11 @@
 .stat {
     position: relative;
     margin-bottom: 4rem;
+
     &__image {
         width: 100%;
     }
+
     &__sub-text {
         position: absolute;
         width: 100%;
@@ -56,6 +70,7 @@
         line-height: 35px;
         font-size: 3.8em;
     }
+
     &__text {
         position: absolute;
         width: 100%;
@@ -67,33 +82,91 @@
     }
 }
 
+.img-section {
+    position: relative;
+}
+
+.greenRect {
+    position: absolute;
+    height: 25rem;
+    top: 25%;
+    left: 20%;
+    z-index: -1;
+}
+
+.sparkle {
+    position: absolute;
+    display: none;
+    z-index: -1;
+}
+
 @media only screen and (min-width: 768px) {
-    .header {
-        margin-top: 4rem;
+    .greenRect {
+        top: 12%;
+        left: 45%;
     }
+
+    .sparkle {
+        display: block;
+        height: 7rem;
+        bottom: 5rem;
+        left: 5rem;
+    }
+
+    .header {
+        &__img {
+            height: 100%;
+            width: 26.5rem;
+        }
+
+        &__main-text {
+            font-size: 1.5rem;
+            letter-spacing: 2.4px;
+        }
+    }
+
     .list {
         display: flex;
         flex-direction: row;
     }
+
     .stat {
         margin: 2rem;
     }
+
     .images {
         display: flex;
         flex-direction: row;
     }
+
     .photo {
         width: 33.3%;
         margin: 2rem 1rem;
+
         &:nth-child(1) {
             margin-bottom: 300px;
         }
+
         &:nth-child(2) {
             margin-top: 150px;
             margin-bottom: 150px;
         }
+
         &:nth-child(3) {
             margin-top: 300px;
         }
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+
+    .greenRect {
+        height: 30rem;
+        top: 15%;
+        left: 45%;
+    }
+
+    .sparkle {
+        height: 9rem;
     }
 }

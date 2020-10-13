@@ -15,3 +15,6 @@ export const statImage: string;
 export const statSubText: string;
 export const stat__text: string;
 export const statText: string;
+export const imgSection: string;
+export const greenRect: string;
+export const sparkle: string;

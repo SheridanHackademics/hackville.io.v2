@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import * as styles from "./faq.module.scss";
 import Header from "../../images/headers/faq-header.svg"
+import Star from "../../images/contact-star.svg"
 
 interface IFaq {
   title: string,
@@ -74,6 +75,10 @@ const Faq = () => {
           <Description key={i} title={item.title} description={item.description} />
         )}
       </ul>
+      <div className={styles.star}>
+      <img className={styles.starImage} src={Star}></img>
+      <p className={styles.starText}>contact us</p>
+      </div>
     </div>
   </section>
 };

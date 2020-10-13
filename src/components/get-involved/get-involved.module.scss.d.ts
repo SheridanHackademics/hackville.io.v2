@@ -7,6 +7,8 @@ export const content: string;
 export const involvement: string;
 export const involvement__photo: string;
 export const involvementPhoto: string;
+export const involvement__photo__center: string;
+export const involvementPhotoCenter: string;
 export const involvementPhotoSmall: string;
 export const involvement__title: string;
 export const involvementTitle: string;

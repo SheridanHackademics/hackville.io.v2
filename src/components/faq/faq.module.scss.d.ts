@@ -1,4 +1,5 @@
 export const section: string;
+export const star: string;
 export const header: string;
 export const header__img: string;
 export const headerImg: string;
@@ -13,3 +14,5 @@ export const list__item__description: string;
 export const listItemDescription: string;
 export const active: string;
 export const hidden: string;
+export const star__text: string;
+export const starText: string;

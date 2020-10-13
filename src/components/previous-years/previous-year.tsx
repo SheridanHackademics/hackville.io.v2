@@ -7,6 +7,8 @@ import recapHackers from "../../images/hackers-star.svg";
 import recapHours from "../../images/hours-triangle.svg";
 import recapProjects from "../../images/projects-triangle.svg";
 import recapPrizes from "../../images/prizes-blob.svg";
+import greenRect from "../../images/green-rect.svg";
+import sparkle from "../../images/sparkle.svg";
 
 const query = graphql`
   query {
@@ -95,15 +97,19 @@ const PreviousYear = () => {
   return <section id="previous-year" className={styles.section}>
     <div className={styles.header}>
       <img className={styles.headerImg} src={recap}></img>
-      <p className={styles.headerMainText}>Hackville 2019 recap</p>
+      <p className={styles.headerMainText}>hackville 2019 recap</p>
     </div>
     <div className={styles.list}>
       {data.map(d => <Stat key={d.text} image={d.image} text={d.text} subText={d.subText} />)}
     </div>
-    <div className={styles.images}>
-      <Img className={styles.photo} fluid={imageData.photo1.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 1" />
-      <Img className={styles.photo} fluid={imageData.photo2.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 2" />
-      <Img className={styles.photo} fluid={imageData.photo3.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 3" />
+    <div className={styles.imgSection}>
+      <img className={styles.sparkle} src={sparkle}></img>
+      <img className={styles.greenRect} src={greenRect} />
+      <div className={styles.images}>
+        <Img className={styles.photo} fluid={imageData.photo1.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 1" />
+        <Img className={styles.photo} fluid={imageData.photo2.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 2" />
+        <Img className={styles.photo} fluid={imageData.photo3.childImageSharp.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 3" />
+      </div>
     </div>
   </section>
 }

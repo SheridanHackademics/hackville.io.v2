@@ -1,4 +1,7 @@
 export const section: string;
+export const pinwheel: string;
+export const checker: string;
+export const triangles: string;
 export const presents: string;
 export const presents__container: string;
 export const presentsContainer: string;

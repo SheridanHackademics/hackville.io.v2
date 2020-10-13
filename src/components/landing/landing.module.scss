@@ -1,24 +1,51 @@
 .section {
-    padding-top: 80px;
-    margin-bottom: 5rem;
+    padding-top: 92px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.pinwheel {
+    position: absolute;
+    top: 6.97rem;
+    left: 4.3rem;
+    height: 2.44rem;
+    z-index: -1;
+}
+
+.checker {
+    position: absolute;
+    top: 7.5rem;
+    right: 2.8rem;
+    height: 2.44rem;
+    z-index: -1;
+}
+
+.triangles{
+    position: absolute;
+    height: 1rem;
+    top: 20.2rem;
+    left: 2.6rem;
+    z-index: -1;
 }
 
 .presents {
     margin: auto;
     color: #fff;
     display: flex;
-    width: 85%;
-    height: 60px;
-    padding: 4rem 0rem;
+    width: 86%;
+    height: 1.69rem;
+    padding: 3rem 0rem;
+    justify-content: center;
     &__container {
-        display: flex;
-        width: 100%;
+        display: flex;        
         background-color: #2952e6;
+        width: 5.5rem;
         align-items: center;
         justify-content: space-evenly;
         font-family: 'neue-haas-unica-regular-italic', sans-serif;
+        font-size: 0.4rem;
         &__img {
-            height: 33%;
+            height: 0.5rem;
         }
     }
 }
@@ -27,22 +54,21 @@
     &__right {
         width: 0;
         height: 0;
-        border-top: 30px solid transparent;
-        border-bottom: 30px solid transparent;
-        border-right: 45px solid #2952e6;
+        border-top: 0.845rem solid transparent;
+        border-bottom: 0.845rem solid transparent;
+        border-right: 1.4rem solid #2952e6;
     }
     &__left {
         width: 0;
         height: 0;
-        border-top: 30px solid transparent;
-        border-bottom: 30px solid transparent;
-        border-left: 45px solid #2952e6;
+        border-top: 0.845rem solid transparent;
+        border-bottom: 0.845rem solid transparent;
+        border-left: 1.4rem solid #2952e6;
     }
 }
 
 .main__logo {
     width: 80%;
-    margin: 0px 10%;
 }
 
 .information {
@@ -84,18 +110,94 @@
 }
 
 @media only screen and (min-width: 768px) {
+
+    .section {
+        padding-top: 120px;
+    }
+
+    .pinwheel {
+        top: 130px;
+        left: 10px;
+        height: 90px;
+    }
+
+    .checker {
+        top: 175px;
+        right: 10px;
+        height: 129px;
+    }
+
+    .triangles{
+        height: 2.85rem;
+        top: 33rem;
+        left: 2rem;
+    }
+
     .presents {
-        width: 400px;
+        height: 5.15rem;
         &__container {
+            width: 18rem;
+            font-size: 1.2rem;
             &__img {
-                height: 44%;
+                height: 2rem;
             }
         }
     }
+
+    .triangle {
+        &__right {
+            border-top: 2.575rem solid transparent;
+            border-bottom: 2.575rem solid transparent;
+            border-right: 4.8rem solid #2952e6;
+        }
+        &__left {
+            border-top: 2.575rem solid transparent;
+            border-bottom: 2.575rem solid transparent;
+            border-left: 4.8rem solid #2952e6;
+        }
+    }
+
+    .main__logo {
+        height: 10.5em;
+        width: 89%;
+        margin-bottom: 20px;
+    }
+
     .information p {
         font-size: 2em;
     }
     .apply__Btn {
         font-size: 2em;
+        margin-bottom: 5em;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+
+    .pinwheel {
+        top: 130px;
+        left: 10px;
+        height: 90px;
+    }
+
+    .checker {
+        top: 175px;
+        right: 10px;
+        height: 129px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+
+    .pinwheel {
+        top: 130px;
+        left: -65px;
+        height: 90px;
+    }
+
+    .checker {
+        top: 175px;
+        right: -65px;
+        height: 129px;
     }
 }
