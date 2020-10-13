@@ -35,9 +35,17 @@
     .section {
         display: flex;
         width: 960px;
-        margin: auto;
+        margin-bottom: 7rem;
     }
+
+    .header {
+        &__img{
+            height: 314px;
+        }
+    }
+
     .description {
-        margin-top: 8px;
+        width: 569px;
+        font-size: 1em;
     }
 }
