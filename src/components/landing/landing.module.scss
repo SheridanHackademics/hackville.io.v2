@@ -69,7 +69,6 @@
 
 .main__logo {
     width: 80%;
-    // margin: 0px 10%;
 }
 
 .information {
@@ -111,21 +110,26 @@
 }
 
 @media only screen and (min-width: 768px) {
+
+    .section {
+        padding-top: 120px;
+    }
+
     .pinwheel {
         top: 130px;
-        left: 0px;
+        left: 10px;
         height: 90px;
     }
 
     .checker {
-        top: 160px;
-        right: 0px;
+        top: 175px;
+        right: 10px;
         height: 129px;
     }
 
     .triangles{
         height: 2.85rem;
-        top: 31rem;
+        top: 33rem;
         left: 2rem;
     }
 
@@ -156,6 +160,7 @@
     .main__logo {
         height: 10.5em;
         width: 89%;
+        margin-bottom: 20px;
     }
 
     .information p {
@@ -163,5 +168,36 @@
     }
     .apply__Btn {
         font-size: 2em;
+        margin-bottom: 5em;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+
+    .pinwheel {
+        top: 130px;
+        left: 10px;
+        height: 90px;
+    }
+
+    .checker {
+        top: 175px;
+        right: 10px;
+        height: 129px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+
+    .pinwheel {
+        top: 130px;
+        left: -65px;
+        height: 90px;
+    }
+
+    .checker {
+        top: 175px;
+        right: -65px;
+        height: 129px;
     }
 }
