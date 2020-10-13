@@ -99,7 +99,7 @@ const PreviousYear = () => {
     <img className={styles.greenRect} src={greenRect} />
     <div className={styles.header}>
       <img className={styles.headerImg} src={recap}></img>
-      <p className={styles.headerMainText}>Hackville 2019 recap</p>
+      <p className={styles.headerMainText}>hackville 2019 recap</p>
     </div>
     <div className={styles.list}>
       {data.map(d => <Stat key={d.text} image={d.image} text={d.text} subText={d.subText} />)}

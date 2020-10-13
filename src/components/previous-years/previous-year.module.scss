@@ -1,4 +1,5 @@
 .section {
+    margin-top: 4rem;
     justify-content: center;
     text-align: center;
 }
@@ -85,19 +86,26 @@
 
     .greenRect {
         height: 23rem;
-        top: 94.5rem;
+        top: 107rem;
         left: 22rem;
     }
 
     .sparkle {
         display: block;
         height: 7rem;
-        top: 103rem;
+        top: 118rem;
         left: 5rem;
     }
 
     .header {
-        margin-top: 4rem;
+        &__img{
+            height: 100%;
+            width: 26.5rem; 
+        }
+        &__main-text{
+            font-size: 1.5rem;
+            letter-spacing: 2.4px;
+        }
     }
     .list {
         display: flex;
@@ -130,13 +138,13 @@
 
     .greenRect {
         height: 30.3rem;
-        top: 81rem;
+        top: 103rem;
         left: 32rem;
     }
 
     .sparkle {
         height: 9rem;
-        top: 100rem;
+        top: 120rem;
         left: 7rem;
     }
 }
