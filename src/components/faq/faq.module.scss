@@ -43,6 +43,9 @@
             padding: .65rem 0rem;
             margin: 0px;
         }
+        &__title:hover{
+            cursor: pointer;
+        }
         &__description {
             font-family: 'neue-haas-unica-light', sans-serif;
             letter-spacing: 1px;
@@ -68,8 +71,9 @@
 @media only screen and (min-width: 768px) {
 
     .list {
-        width: 678px;
+        width: 400px;
         margin: auto;
+        margin-left: 50px;
     }
 
     .header {
@@ -86,6 +90,7 @@
 
     .content{
         display: flex;
+        justify-content: space-evenly;
     }
 
     .star{
@@ -95,6 +100,7 @@
         justify-content: center;
         margin-top: 5%;
         margin-left: 65%;
+        z-index: -1;
         &__text{
             position: absolute;
             font-family: 'obviously-normal', sans-serif;;
@@ -103,4 +109,11 @@
         }
     }
 
+}
+@media only screen and (min-width: 992px) {
+
+    .list {
+        width: 650px;
+        margin-left: 70px;
+    }
 }
