@@ -13,8 +13,8 @@ const Description = ({ title, description }: IFaq) => {
 
   let active = (state) ? styles.active : styles.hidden;
 
-  return <li onClick={() => setState(!state)} className={styles.listItem}>
-    <h3 className={styles.listItemTitle}>
+  return <li className={styles.listItem}>
+    <h3 onClick={() => setState(!state)} className={styles.listItemTitle}>
       {title}
     </h3>
     <p className={styles.listItemDescription + " " + active}>
