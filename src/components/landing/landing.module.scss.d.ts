@@ -14,5 +14,5 @@ export const triangleLeft: string;
 export const main__logo: string;
 export const mainLogo: string;
 export const information: string;
-export const apply__Btn: string;
+export const apply_btn: string;
 export const applyBtn: string;

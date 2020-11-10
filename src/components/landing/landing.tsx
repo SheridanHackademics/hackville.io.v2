@@ -11,7 +11,7 @@ const Landing = () => (
     <img className={styles.checker} src={Checker}></img>
     <img className={styles.pinwheel} src={Pinwheel}></img>
     <img className={styles.triangles} src={Triangles}></img>
-    
+
     <div className={styles.presents}>
       <div className={styles.triangleRight} />
       <div className={styles.presentsContainer}>
@@ -24,7 +24,7 @@ const Landing = () => (
     <div className={styles.information}>
       <p>february 5 - 7, 2021</p>
       <p>virtual</p>
-      <button className={styles.applyBtn}>Applications are opening soon</button>
+      <a target="_blank" rel="nofollow" role="button" href="https://docs.google.com/forms/d/1y-4IhAExxpxS7-rMngy-zr6h7KlbFSUBbLnmUNe2FNU/edit" className={styles.applyBtn}>Applications are open</a>
     </div>
   </section >
 )

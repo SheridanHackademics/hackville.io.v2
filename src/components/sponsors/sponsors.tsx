@@ -6,7 +6,7 @@ import Img from "gatsby-image";
 
 const query = graphql`
   query {
-    photo1: file(relativePath: { eq: "sponsors/age-well-logo.png" }) {
+    sponsor1: file(relativePath: { eq: "2021/sponsors/rbc-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           tracedSVG
@@ -19,7 +19,7 @@ const query = graphql`
         }
       }
     },
-    photo2: file(relativePath: { eq: "sponsors/alumnioffice-logo.png" }) {
+    sponsor2: file(relativePath: { eq: "2021/sponsors/adobe--logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           tracedSVG
@@ -32,7 +32,7 @@ const query = graphql`
         }
       }
     },
-    photo3: file(relativePath: { eq: "sponsors/aws-logo.png" }) {
+    sponsor3: file(relativePath: { eq: "2021/sponsors/redbull-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           tracedSVG
@@ -45,7 +45,7 @@ const query = graphql`
         }
       }
     },
-    photo4: file(relativePath: { eq: "sponsors/balsamiq-logo.png" }) {
+    photo1: file(relativePath: { eq: "2019/sponsors/age-well-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           tracedSVG
@@ -58,7 +58,7 @@ const query = graphql`
         }
       }
     },
-    photo5: file(relativePath: { eq: "sponsors/edge_logo.png" }) {
+    photo2: file(relativePath: { eq: "2019/sponsors/alumnioffice-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           tracedSVG
@@ -71,7 +71,7 @@ const query = graphql`
         }
       }
     },
-    photo6: file(relativePath: { eq: "sponsors/elderresearch-logo.png" }) {
+    photo3: file(relativePath: { eq: "2019/sponsors/aws-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           tracedSVG
@@ -84,7 +84,7 @@ const query = graphql`
         }
       }
     },
-    photo7: file(relativePath: { eq: "sponsors/github-logo.png" }) {
+    photo4: file(relativePath: { eq: "2019/sponsors/balsamiq-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           tracedSVG
@@ -97,7 +97,7 @@ const query = graphql`
         }
       }
     },
-    photo8: file(relativePath: { eq: "sponsors/IBM-logo.png" }) {
+    photo5: file(relativePath: { eq: "2019/sponsors/edge_logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           tracedSVG
@@ -110,7 +110,7 @@ const query = graphql`
         }
       }
     },
-    photo9: file(relativePath: { eq: "sponsors/icarehomehealth-logo.png" }) {
+    photo6: file(relativePath: { eq: "2019/sponsors/elderresearch-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           tracedSVG
@@ -123,7 +123,7 @@ const query = graphql`
         }
       }
     },
-    photo10: file(relativePath: { eq: "sponsors/mlh-logo.png" }) {
+    photo7: file(relativePath: { eq: "2019/sponsors/github-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           tracedSVG
@@ -136,7 +136,46 @@ const query = graphql`
         }
       }
     },
-    photo11: file(relativePath: { eq: "sponsors/sketch-logo.png" }) {
+    photo8: file(relativePath: { eq: "2019/sponsors/IBM-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          tracedSVG
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+          sizes
+        }
+      }
+    },
+    photo9: file(relativePath: { eq: "2019/sponsors/icarehomehealth-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          tracedSVG
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+          sizes
+        }
+      }
+    },
+    photo10: file(relativePath: { eq: "2019/sponsors/mlh-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          tracedSVG
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+          sizes
+        }
+      }
+    },
+    photo11: file(relativePath: { eq: "2019/sponsors/sketch-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           tracedSVG
@@ -162,7 +201,24 @@ const Sponsors = () => {
     </div>
     <div className={styles.content}>
       <p>
-        Thank you to all of our previous sponsors and partners.
+        Big thanks to this years sponsors.
+      </p>
+    </div>
+    <div className={styles.images}>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.sponsor1.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 1" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.sponsor2.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img style={{ transform: 'translateY(100%)' }} className={styles.photo} fluid={imageData.sponsor3.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 3" />
+      </div>
+    </div>
+    <hr />
+    <div className={styles.content}>
+      <p>
+        Thank you to all of our past sponsors and partners.
       </p>
     </div>
     <div className={styles.images}>

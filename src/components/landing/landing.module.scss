@@ -20,7 +20,7 @@
     z-index: -1;
 }
 
-.triangles{
+.triangles {
     position: absolute;
     height: 1rem;
     top: 20.2rem;
@@ -36,14 +36,16 @@
     height: 1.69rem;
     padding: 3rem 0rem;
     justify-content: center;
+
     &__container {
-        display: flex;        
+        display: flex;
         background-color: #2952e6;
         width: 5.5rem;
         align-items: center;
         justify-content: space-evenly;
         font-family: 'neue-haas-unica-regular-italic', sans-serif;
         font-size: 0.4rem;
+
         &__img {
             height: 0.5rem;
         }
@@ -58,6 +60,7 @@
         border-bottom: 0.845rem solid transparent;
         border-right: 1.4rem solid #2952e6;
     }
+
     &__left {
         width: 0;
         height: 0;
@@ -77,6 +80,7 @@
     align-self: center;
     flex-direction: column;
     padding-top: 1rem;
+
     p {
         font-family: 'neue-haas-unica-bold-italic', sans-serif;
         font-weight: 500;
@@ -86,7 +90,7 @@
     }
 }
 
-.apply__Btn {
+.apply_btn {
     border: none;
     background-color: transparent;
     padding-top: 1rem;
@@ -95,6 +99,16 @@
     line-height: 35px;
     position: relative;
     text-transform: uppercase;
+    color: #000;
+
+    &:hover {
+        &:before {
+            cursor: pointer;
+            border-bottom: #FFF4B3 36px solid;
+            top: -32px;
+        }
+    }
+
     &:before {
         content: "";
         border-bottom: #FFF4B3 12px solid;
@@ -103,9 +117,10 @@
         position: absolute;
         right: 0;
         left: 0;
-        top: -14px;
+        top: -6px;
         bottom: 0;
         z-index: -10;
+        transition: border-bottom ease .25s, top ease .25s;
     }
 }
 
@@ -127,7 +142,7 @@
         height: 129px;
     }
 
-    .triangles{
+    .triangles {
         height: 2.85rem;
         top: 33rem;
         left: 2rem;
@@ -135,9 +150,11 @@
 
     .presents {
         height: 5.15rem;
+
         &__container {
             width: 18rem;
             font-size: 1.2rem;
+
             &__img {
                 height: 2rem;
             }
@@ -150,6 +167,7 @@
             border-bottom: 2.575rem solid transparent;
             border-right: 4.8rem solid #2952e6;
         }
+
         &__left {
             border-top: 2.575rem solid transparent;
             border-bottom: 2.575rem solid transparent;
@@ -166,7 +184,8 @@
     .information p {
         font-size: 2em;
     }
-    .apply__Btn {
+
+    .apply_btn {
         font-size: 2em;
         margin-bottom: 5em;
     }

@@ -14,5 +14,7 @@ export const list__item__description: string;
 export const listItemDescription: string;
 export const active: string;
 export const hidden: string;
+export const star__image: string;
+export const starImage: string;
 export const star__text: string;
 export const starText: string;
