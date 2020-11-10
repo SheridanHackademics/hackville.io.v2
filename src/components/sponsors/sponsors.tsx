@@ -6,6 +6,45 @@ import Img from "gatsby-image";
 
 const query = graphql`
   query {
+    sponsor1: file(relativePath: { eq: "2021/sponsors/rbc-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          tracedSVG
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+          sizes
+        }
+      }
+    },
+    sponsor2: file(relativePath: { eq: "2021/sponsors/adobe--logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          tracedSVG
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+          sizes
+        }
+      }
+    },
+    sponsor3: file(relativePath: { eq: "2021/sponsors/redbull-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          tracedSVG
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+          sizes
+        }
+      }
+    },
     photo1: file(relativePath: { eq: "2019/sponsors/age-well-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
@@ -160,6 +199,23 @@ const Sponsors = () => {
       <img className={styles.headerImg} src={Header}></img>
       <p className={styles.headerMainText}>Sponsors</p>
     </div>
+    <div className={styles.content}>
+      <p>
+        Big thanks to this years sponsors.
+      </p>
+    </div>
+    <div className={styles.images}>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.sponsor1.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 1" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.sponsor2.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img style={{ transform: 'translateY(100%)' }} className={styles.photo} fluid={imageData.sponsor3.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 3" />
+      </div>
+    </div>
+    <hr />
     <div className={styles.content}>
       <p>
         Thank you to all of our past sponsors and partners.
