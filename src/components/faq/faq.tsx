@@ -75,10 +75,10 @@ const Faq = () => {
           <Description key={i} title={item.title} description={item.description} />
         )}
       </ul>
-      <div className={styles.star}>
-      <img className={styles.starImage} src={Star}></img>
-      <p className={styles.starText}>contact us</p>
-      </div>
+      <a rel="nofollow" href="mailto:sheridanhackville@gmail.com" className={styles.star}>
+        <img className={styles.starImage} src={Star}></img>
+        <p className={styles.starText}>Contact Us</p>
+      </a>
     </div>
   </section>
 };

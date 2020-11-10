@@ -49,9 +49,11 @@
             padding: .65rem 0rem;
             margin: 0px;
         }
-        &__title:hover{
+
+        &__title:hover {
             cursor: pointer;
         }
+
         &__description {
             font-family: 'neue-haas-unica-light', sans-serif;
             letter-spacing: 1px;
@@ -99,6 +101,7 @@
     .content {
         display: flex;
         justify-content: space-evenly;
+        position: relative;
     }
 
     .star {
@@ -106,18 +109,27 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 5%;
-        margin-left: 65%;
-        z-index: -1;
-        &__text {
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        width: 308px;
+        height: 100%;
+
+        &__image {
             position: absolute;
+            z-index: -1;
+        }
+
+        &__text {
             font-family: 'obviously-normal', sans-serif;
-            top: 42%;
-            font-size: .9em;
+            top: 40%;
+            font-size: .7em;
             letter-spacing: 1.5px;
+            color: #000;
         }
     }
 }
+
 @media only screen and (min-width: 992px) {
 
     .list {
