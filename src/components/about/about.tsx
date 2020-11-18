@@ -3,7 +3,7 @@ import styles from "./about.module.scss"
 import Header from "../../images/about-flower.svg"
 
 const About = () => (
-  <section id="about" className={styles.section}>
+  <section className={styles.section}>
     <div className={styles.header}>
       <img className={styles.headerImg} src={Header}></img>
       <p className={styles.headerMainText}>about</p>

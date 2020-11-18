@@ -35,21 +35,17 @@ const App = () => {
       <Header />
       <main className="main">
         <Landing />
+        <div style={{ marginBottom: '120px' }} id="about" />
         <About />
+        <div style={{ marginBottom: '120px' }} id="previous-year" />
         <PreviousYear />
+        <div style={{ marginBottom: '100px' }} id="faq" />
         <Faq />
+        <div style={{ marginBottom: '100px' }} id="get-involved" />
         <GetInvolved />
+        <div style={{ marginBottom: '100px' }} id="sponsors" />
         <Sponsors />
       </main>
-      {/* <Link to="#" className={styles.apply}>
-        <Img
-          className={styles.applyImg}
-          fluid={data.file.childImageSharp.fluid}
-          objectFit="cover"
-          objectPosition="50% 50%"
-          alt="Apply Button"
-        />
-      </Link> */}
       <Footer />
     </React.Fragment>
   )

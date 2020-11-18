@@ -94,7 +94,7 @@ const PreviousYear = () => {
     }
   ];
 
-  return <section id="previous-year" className={styles.section}>
+  return <section className={styles.section}>
     <div className={styles.header}>
       <img className={styles.headerImg} src={recap}></img>
       <p className={styles.headerMainText}>hackville 2019 recap</p>

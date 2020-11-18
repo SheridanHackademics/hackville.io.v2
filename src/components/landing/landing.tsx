@@ -24,7 +24,14 @@ const Landing = () => (
     <div className={styles.information}>
       <p>february 5 - 7, 2021</p>
       <p>virtual</p>
-      <a target="_blank" rel="nofollow" role="button" href="https://docs.google.com/forms/d/1y-4IhAExxpxS7-rMngy-zr6h7KlbFSUBbLnmUNe2FNU/edit" className={styles.applyBtn}>Applications are open</a>
+      <a
+        target="_blank"
+        rel="nofollow"
+        role="button"
+        href="https://forms.gle/rHvY9VrMRJPCMbtc7"
+        className={styles.applyBtn}>
+        Applications are open
+      </a>
     </div>
   </section >
 )

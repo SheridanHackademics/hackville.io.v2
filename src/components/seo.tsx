@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useLocation } from "@reach/router";
-import { useStaticQuery, graphql } from "gatsby";
+import { withPrefix, useStaticQuery, graphql } from "gatsby";
 
 interface IProps {
     title?: string,
@@ -64,6 +64,7 @@ const SEO = ({ title, description, image }: IProps) => {
                 <meta name="twitter:description" content={seo.description} />
             )}
             {seo.image && <meta name="twitter:image" content={seo.image} />}
+            <script src={withPrefix('smoothscroll.js')} type="text/javascript" />
         </Helmet>
     )
 };
