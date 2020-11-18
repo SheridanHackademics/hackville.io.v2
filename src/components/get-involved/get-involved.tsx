@@ -66,7 +66,7 @@ const Involvement = ({ title, photo, extraStyles }: IProps) => (
 const GetInvolved = () => {
   const imageData = useStaticQuery(query);
 
-  return <section id="get-involved" className={styles.section}>
+  return <section className={styles.section}>
     <div className={styles.header}>
       <img className={styles.headerImg} src={Header}></img>
       <p className={styles.headerMainText}>get involved</p>

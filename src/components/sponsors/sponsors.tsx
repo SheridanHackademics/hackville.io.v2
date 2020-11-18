@@ -9,182 +9,119 @@ const query = graphql`
     sponsor1: file(relativePath: { eq: "2021/sponsors/rbc-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
+          ...GatsbyImageSharpFluid
         }
       }
     },
     sponsor2: file(relativePath: { eq: "2021/sponsors/adobe--logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
+          ...GatsbyImageSharpFluid
         }
       }
     },
     sponsor3: file(relativePath: { eq: "2021/sponsors/redbull-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    sponsor4: file(relativePath: { eq: "2021/sponsors/alumnioffice-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    sponsor5: file(relativePath: { eq: "2021/sponsors/smrtcty-logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    sponsor6: file(relativePath: { eq: "2021/sponsors/office-for-sustainability.jpeg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
         }
       }
     },
     photo1: file(relativePath: { eq: "2019/sponsors/age-well-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
+          ...GatsbyImageSharpFluid
         }
       }
     },
     photo2: file(relativePath: { eq: "2019/sponsors/alumnioffice-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
+          ...GatsbyImageSharpFluid
         }
       }
     },
     photo3: file(relativePath: { eq: "2019/sponsors/aws-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
+          ...GatsbyImageSharpFluid
         }
       }
     },
     photo4: file(relativePath: { eq: "2019/sponsors/balsamiq-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
+          ...GatsbyImageSharpFluid
         }
       }
     },
     photo5: file(relativePath: { eq: "2019/sponsors/edge_logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
+          ...GatsbyImageSharpFluid
         }
       }
     },
     photo6: file(relativePath: { eq: "2019/sponsors/elderresearch-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
+          ...GatsbyImageSharpFluid
         }
       }
     },
     photo7: file(relativePath: { eq: "2019/sponsors/github-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
+          ...GatsbyImageSharpFluid
         }
       }
     },
     photo8: file(relativePath: { eq: "2019/sponsors/IBM-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
+          ...GatsbyImageSharpFluid
         }
       }
     },
     photo9: file(relativePath: { eq: "2019/sponsors/icarehomehealth-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
+          ...GatsbyImageSharpFluid
         }
       }
     },
     photo10: file(relativePath: { eq: "2019/sponsors/mlh-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
+          ...GatsbyImageSharpFluid
         }
       }
     },
     photo11: file(relativePath: { eq: "2019/sponsors/sketch-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
+          ...GatsbyImageSharpFluid
         }
       }
     },
@@ -194,10 +131,10 @@ const query = graphql`
 
 const Sponsors = () => {
   const imageData = useStaticQuery(query);
-  return <section id="sponsors" className={styles.section}>
+  return <section className={styles.section}>
     <div className={styles.header}>
       <img className={styles.headerImg} src={Header}></img>
-      <p className={styles.headerMainText}>Sponsors</p>
+      <p className={styles.headerMainText}>sponsors</p>
     </div>
     <div className={styles.content}>
       <p>
@@ -214,6 +151,15 @@ const Sponsors = () => {
       <div className={styles.photoContainer}>
         <Img style={{ transform: 'translateY(100%)' }} className={styles.photo} fluid={imageData.sponsor3.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 3" />
       </div>
+      <div className={styles.photoContainer}>
+        <Img style={{ transform: 'translateY(100%)' }} className={styles.photo} fluid={imageData.sponsor4.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.sponsor5.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.sponsor6.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
+      </div>
     </div>
     <hr />
     <div className={styles.content}>
@@ -225,8 +171,11 @@ const Sponsors = () => {
       <div className={styles.photoContainer}>
         <Img className={styles.photo} fluid={imageData.photo1.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 1" />
       </div>
-      <div className={styles.photoContainer}>
+      {/* <div className={styles.photoContainer}>
         <Img className={styles.photo} fluid={imageData.photo2.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
+      </div> */}
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.sponsor4.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
       </div>
       <div className={styles.photoContainer}>
         <Img className={styles.photo} fluid={imageData.photo3.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 3" />

@@ -64,7 +64,7 @@ const Faq = () => {
   ];
 
 
-  return <section id="faq" className={styles.section}>
+  return <section className={styles.section}>
     <div className={styles.header}>
       <img className={styles.headerImg} src={Header}></img>
       <p className={styles.headerMainText}>frequently asked questions</p>
