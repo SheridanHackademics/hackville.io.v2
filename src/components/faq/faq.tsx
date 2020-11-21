@@ -51,7 +51,7 @@ const Faq = () => {
     },
     {
       title: "Do I need to bring anything?",
-      description: "Laptop, pens, paper and any other tools you may use to solve problems. We will provide food, power and a safe work environment for all teams."
+      description: "Laptop, pens, paper and any other tools you may use to solve problems. We will provide a safe, inclusive work collaboration environment for all teams."
     },
     {
       title: "Is there a code of conduct?",
