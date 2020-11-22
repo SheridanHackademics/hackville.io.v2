@@ -18,7 +18,7 @@ const Header: React.FC = () => {
             <div></div>
             <div></div>
           </div>
-          <Link to="#" className={styles.navLogo}>
+          <Link to="#top" className={styles.navLogo}>
             <img className={styles.navLogo} src={Logo} />
           </Link>
         </div>
@@ -47,6 +47,15 @@ const Header: React.FC = () => {
             <Link onClick={() => setState(!state)} to="#sponsors">
               Sponsors
             </Link>
+          </li>
+          <li className={styles.navListLink}>
+            <a target="_blank"
+              rel="nofollow"
+              role="button"
+              className={styles.applyButton}
+              href="https://forms.gle/rHvY9VrMRJPCMbtc7" >
+              Apply
+            </a>
           </li>
         </ul>
       </nav>

@@ -32,9 +32,22 @@ const App = () => {
   return (
     <React.Fragment>
       <SEO title="Hackville 2021"></SEO>
+      <div id="top" />
       <Header />
       <main className="main">
         <Landing />
+        {/* <a rel="nofollow"
+          target="_blank"
+          href="https://forms.gle/rHvY9VrMRJPCMbtc7"
+          className={styles.applyHide}
+          id="apply-now-button">
+          <Img className={styles.applyImg}
+            fluid={data.file.childImageSharp.fluid}
+            objectFit="cover"
+            objectPosition="50% 50%"
+            alt="Apply Button"
+          />
+        </a> */}
         <div style={{ marginBottom: '120px' }} id="about" />
         <About />
         <div style={{ marginBottom: '120px' }} id="previous-year" />

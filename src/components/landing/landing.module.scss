@@ -90,41 +90,91 @@
     }
 }
 
-.apply_btn {
+.apply-text {
     border: none;
     background-color: transparent;
     padding-top: 1rem;
     font-family: 'obviously-normal', sans-serif;
-    font-size: 1em;
     line-height: 35px;
     position: relative;
     text-transform: uppercase;
     color: #000;
-
-    &:hover {
-        &:before {
-            cursor: pointer;
-            border-bottom: #FFF4B3 36px solid;
-            top: -32px;
-        }
-    }
+    letter-spacing: 4px;
+    font-size: 1em;
 
     &:before {
         content: "";
         border-bottom: #FFF4B3 12px solid;
-        width: 100%;
+        width: 115%;
         height: 100%;
         position: absolute;
         right: 0;
-        left: 0;
-        top: -6px;
+        left: -8.5%;
+        top: -10px;
         bottom: 0;
         z-index: -10;
         transition: border-bottom ease .25s, top ease .25s;
     }
 }
 
+.apply-button-container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.apply-button-link {
+    color: inherit;
+}
+
+.apply-button {
+    padding: 1rem 2rem;
+    font-style: italic;
+    margin: 2rem 0rem;
+    width: 100%;
+    background-color:#2952E5;
+    transition: all .25s ease;
+    border: 4px solid #2952E5;
+    color: white;
+    box-sizing: border-box;
+
+    &-participant {
+        @extend .apply-button;
+        background-color:#2952E5;
+        border: 4px solid #2952E5;
+
+        &:hover {
+            background-color: white;
+            color: #2952E5;
+        }
+    }
+
+    &-mentor {
+        @extend .apply-button;
+        background-color: #3DB19E;
+        border: 4px solid #3DB19E;    
+
+        &:hover {
+            background-color: white;
+            color:  #3DB19E;
+        }
+    }
+}
+
 @media only screen and (min-width: 768px) {
+
+    .apply-button-container {
+        margin-top: 2rem;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .apply-button-participant, .apply-button-mentor {
+        width: 350px;
+    }
 
     .section {
         padding-top: 120px;
@@ -181,7 +231,7 @@
         margin-bottom: 20px;
     }
 
-    .information p {
+    .information p, .information .apply-button-container {
         font-size: 2em;
     }
 

@@ -1,13 +1,28 @@
 .apply {
-    position: sticky;
-    bottom: 1rem;
-    right: 0rem;
-    float: right;
     width: 120px;
     height: 120px;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
     margin: 2rem;
 
     &__img {
         width: 120px;
+    }
+
+    &__show {
+        @extend .apply;
+        opacity: 1;
+        visibility: visible;
+        display: block;
+    }
+    
+    &__hide {
+        @extend .apply;
+        opacity: 0;
+        visibility: hidden;
+        display: none;
     }
 }

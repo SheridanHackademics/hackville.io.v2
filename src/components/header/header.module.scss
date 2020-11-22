@@ -56,7 +56,7 @@
         }
 
         &--hidden {
-            top: -340px;
+            top: -410px;
         }
 
         &__link {
@@ -72,7 +72,24 @@
     }
 }
 
+
+.apply-button {
+    padding: none;
+    border: none;
+    font-style: inherit;
+}
+
 @media only screen and (min-width: 900px) {
+
+    .apply-button {
+        padding: 0.5rem 1rem;
+        border: 4px solid #2952E5;
+        font-style: italic;
+        transition: all .25s ease;
+        color: white;
+        background-color: #2952E5;
+    }    
+
     .nav__burger {
         display: none;
     }
@@ -110,6 +127,8 @@
             }
         }
     }
+
+
 }
 
 @media only screen and (min-width: 1080px) {
