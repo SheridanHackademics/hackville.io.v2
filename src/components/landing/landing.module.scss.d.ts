@@ -17,6 +17,7 @@ export const information: string;
 export const applyText: string;
 export const applyButtonContainer: string;
 export const applyButtonLink: string;
+export const applyButton: string;
 export const applyButtonParticipant: string;
 export const applyButtonMentor: string;
 export const apply_btn: string;
