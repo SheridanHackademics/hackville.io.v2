@@ -11,4 +11,18 @@
     &__img {
         width: 120px;
     }
+
+    &__show {
+        @extend .apply;
+        opacity: 1;
+        visibility: visible;
+        display: block;
+    }
+    
+    &__hide {
+        @extend .apply;
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
 }
