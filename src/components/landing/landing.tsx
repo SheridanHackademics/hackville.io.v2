@@ -24,14 +24,27 @@ const Landing = () => (
     <div className={styles.information}>
       <p>february 5 - 7, 2021</p>
       <p>virtual</p>
-      <a
-        target="_blank"
-        rel="nofollow"
-        role="button"
-        href="https://forms.gle/rHvY9VrMRJPCMbtc7"
-        className={styles.applyBtn}>
+      <div className={styles.applyText}>
         Applications are open
-      </a>
+      </div>
+      <div className={styles.applyButtonContainer}>
+        <a
+          target="_blank"
+          rel="nofollow"
+          role="button"
+          className={styles.applyButtonParticipant}
+          href="https://forms.gle/rHvY9VrMRJPCMbtc7" >
+          Apply as a Participant ⟶
+          </a>
+        <a
+          target="_blank"
+          rel="nofollow"
+          role="button"
+          className={styles.applyButtonMentor}
+          href="https://docs.google.com/forms/d/e/1FAIpQLSc4dETxpkejRwTEarlBASANcosjKdRhJZWp2MFYZ8L8VFbMJA/viewform">
+          Apply as a Mentor ⟶
+          </a>
+      </div>
     </div>
   </section >
 )

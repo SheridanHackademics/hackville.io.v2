@@ -90,39 +90,77 @@
     }
 }
 
-.apply_btn {
+.apply-text {
     border: none;
     background-color: transparent;
     padding-top: 1rem;
     font-family: 'obviously-normal', sans-serif;
-    font-size: 1em;
     line-height: 35px;
     position: relative;
     text-transform: uppercase;
     color: #000;
-
-    &:hover {
-        &:before {
-            cursor: pointer;
-            border-bottom: #FFF4B3 36px solid;
-            top: -32px;
-        }
-    }
+    letter-spacing: 4px;
+    font-size: 1.6em;
 
     &:before {
         content: "";
         border-bottom: #FFF4B3 12px solid;
-        width: 100%;
+        width: 115%;
         height: 100%;
         position: absolute;
         right: 0;
-        left: 0;
-        top: -6px;
+        left: -8.5%;
+        top: -10px;
         bottom: 0;
         z-index: -10;
         transition: border-bottom ease .25s, top ease .25s;
     }
 }
+
+.apply-button-container {
+    margin-top: 5rem;
+    display: flex;
+}
+
+.apply-button-link {
+    color: inherit;
+}
+
+.apply-button-participant {
+    padding: 1rem 2rem;
+    font-style: italic;
+    margin: 0rem 2rem;
+    width: 275px;
+    background-color:#2952E5;
+    transition: all .25s ease;
+    border: 4px solid #2952E5;
+    color: white;
+
+    &:hover {
+        background-color: white;
+        border: 4px solid #2952E5;
+        color: #2952E5;
+    }
+}
+
+.apply-button-mentor {
+    padding: 1rem 2rem;
+    font-style: italic;
+    margin: 0rem 2rem;
+    width: 275px;
+    background-color: #3DB19E;
+    transition: background-color .25s ease;
+    border: 4px solid #3DB19E;
+    color: white;
+
+    &:hover {
+        background-color: white;
+        border: 4px solid #3DB19E;
+        color:  #3DB19E;
+    }
+}
+
+
 
 @media only screen and (min-width: 768px) {
 
