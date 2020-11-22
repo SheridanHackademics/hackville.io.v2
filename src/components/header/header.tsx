@@ -18,7 +18,7 @@ const Header: React.FC = () => {
             <div></div>
             <div></div>
           </div>
-          <Link to="#" className={styles.navLogo}>
+          <Link to="#top" className={styles.navLogo}>
             <img className={styles.navLogo} src={Logo} />
           </Link>
         </div>
