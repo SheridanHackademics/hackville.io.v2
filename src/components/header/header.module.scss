@@ -72,6 +72,13 @@
     }
 }
 
+.apply-button {
+    padding: 0.5rem 1rem;
+    font-style: italic;
+    background-color:#2952E5;
+    color: white;
+}
+
 @media only screen and (min-width: 900px) {
     .nav__burger {
         display: none;

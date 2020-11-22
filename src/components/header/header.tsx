@@ -48,6 +48,15 @@ const Header: React.FC = () => {
               Sponsors
             </Link>
           </li>
+          <li className={styles.navListLink}>
+            <a target="_blank"
+              rel="nofollow"
+              role="button"
+              className={styles.applyButton}
+              href="https://forms.gle/rHvY9VrMRJPCMbtc7" >
+              Apply
+            </a>
+          </li>
         </ul>
       </nav>
     </header>

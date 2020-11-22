@@ -12,3 +12,4 @@ export const navListShow: string;
 export const navListHidden: string;
 export const nav__list__link: string;
 export const navListLink: string;
+export const applyButton: string;
