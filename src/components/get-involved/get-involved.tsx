@@ -52,14 +52,17 @@ interface IProps {
   title: string,
   photo: any,
   extraStyles?: string,
+  link: string,
 }
 
-const Involvement = ({ title, photo, extraStyles }: IProps) => (
+const Involvement = ({ title, photo, extraStyles, link }: IProps) => (
   <div className={styles.involvement}>
     <div className={styles.involvementPhoto + " " + extraStyles}>
       <Img className={styles.involvementPhotoCenter} fluid={photo.fluid} objectFit="cover" objectPosition="100% 100%" alt="photo 1" />
     </div>
-    <h3 className={styles.involvementTitle}>{title}</h3>
+    <a href={link} rel="nofollow" target="_blank">
+      <h3 className={styles.involvementTitle}>{title}</h3>
+    </a>
   </div>
 )
 
@@ -79,9 +82,9 @@ const GetInvolved = () => {
       </p>
     </div>
     <div className={styles.content}>
-      <Involvement title="Volunteer" photo={imageData.volunteer.childImageSharp} />
-      <Involvement title="Mentor" photo={imageData.mentor.childImageSharp} />
-      <Involvement title="Contribute" photo={imageData.contribute.childImageSharp} extraStyles={styles.involvementPhotoSmall} />
+      <Involvement link="https://docs.google.com/forms/d/e/1FAIpQLSc4dETxpkejRwTEarlBASANcosjKdRhJZWp2MFYZ8L8VFbMJA/viewform" title="Volunteer" photo={imageData.volunteer.childImageSharp} />
+      <Involvement link="https://docs.google.com/forms/d/e/1FAIpQLSc4dETxpkejRwTEarlBASANcosjKdRhJZWp2MFYZ8L8VFbMJA/viewform" title="Mentor" photo={imageData.mentor.childImageSharp} />
+      <Involvement link="https://github.com/sheridanhackademics" title="Contribute" photo={imageData.contribute.childImageSharp} extraStyles={styles.involvementPhotoSmall} />
     </div>
   </section>
 }

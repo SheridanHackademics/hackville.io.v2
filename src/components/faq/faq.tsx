@@ -17,8 +17,7 @@ const Description = ({ title, description }: IFaq) => {
     <h3 onClick={() => setState(!state)} className={styles.listItemTitle}>
       {title}
     </h3>
-    <p className={styles.listItemDescription + " " + active}>
-      {description}
+    <p className={styles.listItemDescription + " " + active} dangerouslySetInnerHTML={{ __html: description }}>
     </p>
   </li>
 }
@@ -35,7 +34,7 @@ const Faq = () => {
     },
     {
       title: "How much does it cost?",
-      description: "Hackville is completely free for 100 students! We want to make our event as accessible as possible, regardless of financial ability or otherwise."
+      description: "Hackville is completely free for 120 students! We want to make our event as accessible as possible, regardless of financial ability or otherwise."
     },
     {
       title: "How do teams work?",
@@ -55,11 +54,11 @@ const Faq = () => {
     },
     {
       title: "Is there a code of conduct?",
-      description: "Yes! More information coming soon."
+      description: "Yes! We are using the MLH code of conduct. If you are interested in learning more click <a style='color: blue; font-size: 14px' href='mailto:sheridanhackville@gmail.com'>here</a>."
     },
     {
       title: "My question isn’t here. Who can I contact?",
-      description: "No worries, please e-mail us at sheridanhackville@gmail.com and we will be more than happy to answer your question!"
+      description: "No worries, please e-mail us at <a style='color: blue; font-size: 14px' href='mailto:sheridanhackville@gmail.com' />sheridanhackville@gmail.com</a> and we will be more than happy to answer your question!"
     }
   ];
 

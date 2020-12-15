@@ -41,7 +41,49 @@ const query = graphql`
         }
       }
     },
-    sponsor6: file(relativePath: { eq: "2021/sponsors/office-for-sustainability.jpeg" }) {
+    sponsor6: file(relativePath: { eq: "2021/sponsors/SSU.jpeg" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    sponsor7: file(relativePath: { eq: "2021/sponsors/mlh.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    sponsor8: file(relativePath: { eq: "2021/sponsors/sheridan.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    sponsor9: file(relativePath: { eq: "2021/sponsors/SDG.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    sponsor10: file(relativePath: { eq: "2021/sponsors/balsamiq.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    sponsor11: file(relativePath: { eq: "2021/sponsors/echoar.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    sponsor12: file(relativePath: { eq: "2021/sponsors/VoiceFlow.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
           ...GatsbyImageSharpFluid
@@ -146,19 +188,37 @@ const Sponsors = () => {
         <Img className={styles.photo} fluid={imageData.sponsor1.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 1" />
       </div>
       <div className={styles.photoContainer}>
-        <Img className={styles.photo} fluid={imageData.sponsor2.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
-      </div>
-      <div className={styles.photoContainer}>
-        <Img style={{ transform: 'translateY(100%)' }} className={styles.photo} fluid={imageData.sponsor3.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 3" />
-      </div>
-      <div className={styles.photoContainer}>
         <Img style={{ transform: 'translateY(100%)' }} className={styles.photo} fluid={imageData.sponsor4.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
       </div>
       <div className={styles.photoContainer}>
-        <Img className={styles.photo} fluid={imageData.sponsor5.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
+        <Img style={{ transform: 'translateY(67.5%)' }} className={styles.photo} fluid={imageData.sponsor7.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
       </div>
       <div className={styles.photoContainer}>
         <Img className={styles.photo} fluid={imageData.sponsor6.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img style={{ transform: 'translateY(250%)' }} className={styles.photo} fluid={imageData.sponsor8.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img style={{ transform: 'translateY(40%)' }} className={styles.photo} fluid={imageData.sponsor9.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.sponsor2.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img style={{ transform: 'translateY(20%)' }} className={styles.photo} fluid={imageData.sponsor5.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img style={{ transform: 'translateY(75%)' }} className={styles.photo} fluid={imageData.sponsor3.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 3" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.sponsor10.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.sponsor11.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img className={styles.photo} fluid={imageData.sponsor12.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
       </div>
     </div>
     <hr />
