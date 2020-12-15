@@ -1,3 +1,5 @@
+export const mlhBadge: string;
+export const mlhBadgeImage: string;
 export const section: string;
 export const pinwheel: string;
 export const checker: string;
