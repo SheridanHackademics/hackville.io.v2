@@ -1,7 +1,5 @@
-import { Link } from "@reach/router"
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import About from "./about/about"
 import Faq from "./faq/faq"
 import Footer from "./footer/footer"
@@ -13,6 +11,7 @@ import Sponsors from "./sponsors/sponsors"
 
 import styles from "./app.module.scss"
 import SEO from "./seo"
+import ApplyNow from "./apply-now/applyNow"
 
 const query = graphql`
   query GetApplyPicture {
@@ -35,6 +34,7 @@ const App = () => {
       <div id="top" />
       <Header />
       <main className="main">
+        {/* <ApplyNow /> */}
         <Landing />
         <div style={{ marginBottom: '120px' }} id="about" />
         <About />

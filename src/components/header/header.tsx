@@ -49,12 +49,12 @@ const Header: React.FC = () => {
             </Link>
           </li>
           <li className={styles.navListLink}>
-            <a target="_blank"
+            <a href="/Hackville2021-schedule.pdf"
               rel="nofollow"
               role="button"
-              className={styles.applyButton}
-              href="https://forms.gle/rHvY9VrMRJPCMbtc7" >
-              Apply
+              target="_blank"
+              className={styles.applyButton}>
+              Schedule
             </a>
           </li>
         </ul>

@@ -90,6 +90,13 @@ const query = graphql`
         }
       }
     },
+    sponsor13: file(relativePath: { eq: "2021/sponsors/sticker-mule-logo-dark.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
     photo1: file(relativePath: { eq: "2019/sponsors/age-well-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 300) {
@@ -209,7 +216,9 @@ const Sponsors = () => {
         <Img style={{ transform: 'translateY(20%)' }} className={styles.photo} fluid={imageData.sponsor5.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
       </div>
       <div className={styles.photoContainer}>
-        <Img style={{ transform: 'translateY(75%)' }} className={styles.photo} fluid={imageData.sponsor3.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 3" />
+        <a href="http://hackp.ac/mlh-stickermule-hackathons" rel="nofollow" target="_blank">
+          <Img style={{ transform: 'translateY(90%)' }} className={styles.photo} fluid={imageData.sponsor13.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
+        </a>
       </div>
       <div className={styles.photoContainer}>
         <Img className={styles.photo} fluid={imageData.sponsor10.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
@@ -219,6 +228,9 @@ const Sponsors = () => {
       </div>
       <div className={styles.photoContainer}>
         <Img className={styles.photo} fluid={imageData.sponsor12.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 2" />
+      </div>
+      <div className={styles.photoContainer}>
+        <Img style={{ transform: 'translateY(0%)' }} className={styles.photo} fluid={imageData.sponsor3.childImageSharp.fluid} objectFit="cover" objectPosition="50% 50%" alt="photo 3" />
       </div>
     </div>
     <hr />

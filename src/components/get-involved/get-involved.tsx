@@ -82,8 +82,8 @@ const GetInvolved = () => {
       </p>
     </div>
     <div className={styles.content}>
-      <Involvement link="https://docs.google.com/forms/d/e/1FAIpQLSc4dETxpkejRwTEarlBASANcosjKdRhJZWp2MFYZ8L8VFbMJA/viewform" title="Volunteer" photo={imageData.volunteer.childImageSharp} />
-      <Involvement link="https://docs.google.com/forms/d/e/1FAIpQLSc4dETxpkejRwTEarlBASANcosjKdRhJZWp2MFYZ8L8VFbMJA/viewform" title="Mentor" photo={imageData.mentor.childImageSharp} />
+      <Involvement link="https://github.com/sheridanhackademics" title="Volunteer" photo={imageData.volunteer.childImageSharp} />
+      <Involvement link="https://github.com/sheridanhackademics" title="Mentor" photo={imageData.mentor.childImageSharp} />
       <Involvement link="https://github.com/sheridanhackademics" title="Contribute" photo={imageData.contribute.childImageSharp} extraStyles={styles.involvementPhotoSmall} />
     </div>
   </section>

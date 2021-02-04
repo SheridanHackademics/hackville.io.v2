@@ -9,6 +9,9 @@ const Footer = () => (
   <footer className={footerStyles.footer}>
     <ul>
       <li>
+        <a href="/Hackville2021-schedule.pdf" rel="nofollow" target="_blank">View Event Schedule</a>
+      </li>
+      <li>
         <a href="mailto:sheridanhackville@gmail.com">Contact Us</a>
       </li>
       <li>
